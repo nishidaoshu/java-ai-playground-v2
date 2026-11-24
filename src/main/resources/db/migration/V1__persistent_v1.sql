@@ -1,0 +1,17 @@
+CREATE EXTENSION IF NOT EXISTS vector;
+CREATE TABLE app_users (id BIGSERIAL PRIMARY KEY, username VARCHAR(80) UNIQUE NOT NULL, password_hash VARCHAR(100) NOT NULL, display_name VARCHAR(100) NOT NULL, role VARCHAR(20) NOT NULL);
+CREATE TABLE flight_orders (id VARCHAR(40) PRIMARY KEY, user_id BIGINT NOT NULL REFERENCES app_users, flight_date DATE NOT NULL, origin VARCHAR(20) NOT NULL, destination VARCHAR(20) NOT NULL, cabin VARCHAR(20) NOT NULL, status VARCHAR(20) NOT NULL, fare NUMERIC(12,2) NOT NULL, version BIGINT NOT NULL DEFAULT 0);
+CREATE INDEX order_owner ON flight_orders(user_id);
+CREATE TABLE knowledge_documents (id UUID PRIMARY KEY, owner_id BIGINT REFERENCES app_users, title VARCHAR(200) NOT NULL, version VARCHAR(80) NOT NULL, filename VARCHAR(200) NOT NULL, content TEXT NOT NULL, sha256 VARCHAR(64) NOT NULL, authoritative BOOLEAN NOT NULL DEFAULT FALSE, created_at TIMESTAMPTZ NOT NULL, UNIQUE(owner_id,title,version));
+CREATE UNIQUE INDEX global_document_version ON knowledge_documents(title, version) WHERE owner_id IS NULL;
+CREATE TABLE knowledge_chunks (id UUID PRIMARY KEY, document_id UUID NOT NULL REFERENCES knowledge_documents ON DELETE CASCADE, ordinal INT NOT NULL, text TEXT NOT NULL, embedding VECTOR(512) NOT NULL, UNIQUE(document_id,ordinal));
+CREATE INDEX chunks_cosine ON knowledge_chunks USING hnsw (embedding vector_cosine_ops);
+CREATE TABLE operation_plans (id UUID PRIMARY KEY, user_id BIGINT NOT NULL REFERENCES app_users, order_id VARCHAR(40) NOT NULL REFERENCES flight_orders, order_version BIGINT NOT NULL, action VARCHAR(20) NOT NULL, new_date DATE, new_cabin VARCHAR(20), fee NUMERIC(12,2) NOT NULL, refund NUMERIC(12,2) NOT NULL, expires_at TIMESTAMPTZ NOT NULL, created_at TIMESTAMPTZ NOT NULL, status VARCHAR(20) NOT NULL, rule_version VARCHAR(80) NOT NULL, evidence TEXT NOT NULL, executed_at TIMESTAMPTZ, result_version BIGINT);
+CREATE INDEX plan_owner ON operation_plans(user_id,created_at DESC);
+CREATE TABLE operation_records (id UUID PRIMARY KEY, user_id BIGINT NOT NULL REFERENCES app_users, plan_id UUID, order_id VARCHAR(40), action VARCHAR(40) NOT NULL, outcome VARCHAR(20) NOT NULL, reason TEXT NOT NULL, request_id UUID NOT NULL, created_at TIMESTAMPTZ NOT NULL);
+CREATE TABLE conversations (id UUID PRIMARY KEY, user_id BIGINT NOT NULL REFERENCES app_users, created_at TIMESTAMPTZ NOT NULL);
+CREATE TABLE chat_messages (id BIGSERIAL PRIMARY KEY, conversation_id UUID NOT NULL REFERENCES conversations, role VARCHAR(20) NOT NULL, content TEXT NOT NULL, metadata TEXT NOT NULL DEFAULT '{}', request_id UUID NOT NULL, created_at TIMESTAMPTZ NOT NULL);
+CREATE INDEX conversation_messages ON chat_messages(conversation_id,id);
+CREATE TABLE request_traces (id UUID PRIMARY KEY, user_id BIGINT NOT NULL REFERENCES app_users, path VARCHAR(200) NOT NULL, status VARCHAR(20) NOT NULL, started_at TIMESTAMPTZ NOT NULL, first_token_ms BIGINT, total_ms BIGINT, input_tokens BIGINT NOT NULL DEFAULT 0, output_tokens BIGINT NOT NULL DEFAULT 0, error TEXT);
+CREATE TABLE trace_events (id BIGSERIAL PRIMARY KEY, request_id UUID NOT NULL REFERENCES request_traces ON DELETE CASCADE, kind VARCHAR(40) NOT NULL, data JSONB NOT NULL, created_at TIMESTAMPTZ NOT NULL DEFAULT NOW());
+CREATE INDEX traces_owner ON request_traces(user_id,started_at DESC);

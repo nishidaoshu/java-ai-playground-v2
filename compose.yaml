@@ -1,0 +1,20 @@
+name: java-ai-v2
+services:
+  db:
+    image: pgvector/pgvector:0.8.1-pg17
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: java_ai_v2
+      POSTGRES_USER: java_ai_v2
+      POSTGRES_PASSWORD: ${DB_PASSWORD:?set DB_PASSWORD in the external runtime env file}
+    ports:
+      - "${DB_BIND_ADDRESS:-127.0.0.1}:${DB_PORT:-15433}:5432"
+    volumes:
+      - v2-postgres:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U java_ai_v2 -d java_ai_v2"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+volumes:
+  v2-postgres:

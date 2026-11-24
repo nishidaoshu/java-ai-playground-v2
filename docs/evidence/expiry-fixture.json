@@ -1,0 +1,18 @@
+{
+  "planId": "636c2b7f-527a-4886-af31-8307bbdee250",
+  "orderId": "A1002",
+  "originalExpiresAt": "2026-11-24 12:32:52.135279+00:00",
+  "shortenedExpiresAt": "2026-11-24 12:28:52.194233+00:00",
+  "beforeOrder": [
+    "CONFIRMED",
+    0
+  ],
+  "productionTtlSeconds": 300,
+  "afterPlanStatus": "DISCARDED",
+  "afterOrder": [
+    "CONFIRMED",
+    0
+  ],
+  "automaticExpiryObservedInBrowser": true,
+  "refreshRestoredCard": false
+}

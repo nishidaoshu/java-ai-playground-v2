@@ -1,0 +1,479 @@
+{
+  "runId": "fe0bddd5-a67c-4a29-9b3d-9ca0a3ec37ec",
+  "buildSha256": "b03ff41d87260a173754e9243dd1ef61b502402a21583c0cbb9fa680f9bf0e2b",
+  "sdk": "0.14.1",
+  "mcpProtocol": "2025-06-18",
+  "limits": {
+    "delegations": 2,
+    "tools": 8,
+    "retrievals": 2,
+    "models": 12,
+    "seconds": 240
+  },
+  "mode": "sample",
+  "model": "deepseek-flash",
+  "rerank": "DeepSeek LLM",
+  "embedding": "bge-small-zh-v1.5 int8 CPU",
+  "config": {
+    "chunkSize": 420,
+    "overlap": 80,
+    "candidates": 8,
+    "topK": 4,
+    "minSimilarity": 0.5,
+    "retryMinSimilarity": 0.4,
+    "rerankThreshold": 0.6,
+    "maxRetrievals": 2
+  },
+  "executed": 14,
+  "totalSelected": 14,
+  "passed": 14,
+  "failed": 0,
+  "fixtureOrderIds": [
+    "EVFAB3BC540CE1",
+    "EV575BEF544049",
+    "EV86BCC061B481",
+    "EV704A7BB18259",
+    "EVE54BB1E51ECF",
+    "EVD55B16071EDD",
+    "EVDD9BD015AF43"
+  ],
+  "results": [
+    {
+      "id": "K04",
+      "category": "knowledge",
+      "question": "商务舱退票费率？",
+      "status": "PASS",
+      "requestIds": [
+        "e141472c-e972-48fc-8394-6a82f4b93a32",
+        "574bfd71-6c44-455b-9b1c-1eb40a6ce7e6"
+      ],
+      "answer": "商务舱退票费率：按演示退票服务条款，商务舱（BUSINESS）取消手续费为订单票价的 **10%**，费用按人民币元计算并四舍五入保留两位小数，退款金额为票价减去手续费[1]。\n\n补充说明：\n- 该条款为演示版本（demo-v1.0），仅用于本项目演示，不适用于任何真实航空公司，不产生真实收费[1]。\n- 退票还须满足：订单状态为 CONFIRMED，且距离演示起飞时间（航班日期当天北京时间12:00）至少48小时；少于48小时会被拒绝，已取消订单不能再次退票[1]。\n- 示例（仅演示）：商务舱票价1500元，手续费150元，退款1350元[1]。\n\n本次仅查询了条款并给出费率说明，未生成退票方案，也未修改任何订单。如需办理退票，请提供订单信息，我可以帮你准备待确认方案；方案需由订单所属登录用户在前端确认卡片上点击确认后才会执行。",
+      "sourceTitles": [
+        "演示退票服务条款"
+      ],
+      "fixtureOrderIds": [],
+      "verifiedDatabase": [],
+      "providerInputTokens": 2623,
+      "providerOutputTokens": 362,
+      "elapsedMs": 4516
+    },
+    {
+      "id": "K05",
+      "category": "knowledge",
+      "question": "起飞前多久可以取消订单？",
+      "status": "PASS",
+      "requestIds": [
+        "7bc55b93-7570-45f6-ac61-815883738ea1",
+        "a3a6dad0-f7f0-45f5-b63f-2855786b7a14"
+      ],
+      "answer": "根据演示退票服务条款[1]：\n\n- **时间要求**：距离起飞**至少48小时**才允许退票；少于48小时会被拒绝。\n- **起飞时间口径**：演示中以北京时间航班日期当天 **12:00** 作为起飞时间。\n- **订单状态**：只有状态为 **CONFIRMED** 的订单可以申请取消；已取消订单不能再次退票。\n\n以上为演示规则，不适用于真实航空公司，也不产生真实收费。\n\n本次仅查询了条款，**没有生成取消方案，也没有修改任何订单**。如需实际取消，请提供订单信息，我可以先准备待确认方案；方案需由订单所属登录用户在前端确认卡片上点击确认后才执行，聊天中的文字确认无效。",
+      "sourceTitles": [
+        "演示退票服务条款"
+      ],
+      "fixtureOrderIds": [],
+      "verifiedDatabase": [],
+      "providerInputTokens": 2631,
+      "providerOutputTokens": 305,
+      "elapsedMs": 4563
+    },
+    {
+      "id": "K15",
+      "category": "knowledge",
+      "question": "经济舱手提行李限制是多少公斤？",
+      "status": "PASS",
+      "requestIds": [
+        "0cfc9ad6-cca8-4750-b9c4-fba9e9ada497",
+        "10d258cf-fb49-4493-9b18-407d4a1f28a1"
+      ],
+      "answer": "根据演示资料，经济舱可携带**一件不超过7公斤的手提行李**，同时可携带一件不超过20公斤的托运行李[1]。\n\n需要说明：以上内容来自“演示行李与客服说明（demo-v1.0）”，仅用于项目演示，不代表真实航空公司的服务规则[1]。本次仅查询了知识库，没有执行任何订单操作。",
+      "sourceTitles": [
+        "演示行李与客服说明"
+      ],
+      "fixtureOrderIds": [],
+      "verifiedDatabase": [],
+      "providerInputTokens": 2027,
+      "providerOutputTokens": 190,
+      "elapsedMs": 3547
+    },
+    {
+      "id": "N01",
+      "category": "unsupported",
+      "question": "宠物航空运输要多少钱？",
+      "status": "PASS",
+      "requestIds": [
+        "78847593-810a-4e24-8cd1-0d34e65c47d4",
+        "adcde4d8-0654-4397-ab79-6e2e8d378a5c"
+      ],
+      "answer": "资料不足：当前可访问的知识库没有找到足以支持回答的原文依据，请补充或上传相关演示资料。",
+      "sourceTitles": [],
+      "fixtureOrderIds": [],
+      "verifiedDatabase": [],
+      "providerInputTokens": 2317,
+      "providerOutputTokens": 213,
+      "elapsedMs": 3781
+    },
+    {
+      "id": "M01",
+      "category": "multiturn",
+      "question": "经济舱退票费率是多少？",
+      "status": "PASS",
+      "requestIds": [
+        "d5f180aa-09e1-4b54-b369-4c4a8fa06e1f",
+        "18251a8d-02e2-49d4-83f2-4f4d851e1644",
+        "1f8841ea-1de8-4843-8700-dff6575b6f60"
+      ],
+      "answer": "商务舱退票手续费为**订单票价的10%**，退款金额等于票价减去手续费[1]。\n\n例如：商务舱票价1500元，手续费150元，退款1350元[1]。费用按人民币元计算，四舍五入保留两位小数[1]。\n\n补充说明：\n- 该条款为演示版本（demo-v1.0），仅用于本项目演示，不适用于任何真实航空公司，不产生真实收费[1]。\n- 退票还须满足时间与状态条件：订单状态须为 CONFIRMED，且距离演示起飞时间至少48小时，少于48小时会被拒绝[1]。\n\n本次仅查询了条款并给出费率说明，未生成退票方案，也未对任何订单做修改。",
+      "sourceTitles": [
+        "演示退票服务条款"
+      ],
+      "fixtureOrderIds": [],
+      "verifiedDatabase": [],
+      "providerInputTokens": 5515,
+      "providerOutputTokens": 573,
+      "elapsedMs": 6985
+    },
+    {
+      "id": "M08",
+      "category": "multiturn",
+      "question": "取消订单要提前多少小时？",
+      "status": "PASS",
+      "requestIds": [
+        "b049ec0d-a56d-4ef8-9616-11c01555472a",
+        "5fd41ee5-5530-4701-9df2-59e45663e403",
+        "999d887f-ffe9-4fca-ba17-d0c00000cf43"
+      ],
+      "answer": "根据演示改签条款，改签需**至少提前24小时**：订单状态须为 CONFIRMED，且距离北京时间航班日期当天12:00的演示起飞时间至少24小时[1]。\n\n补充说明：\n- 新航班日期须在北京时间的明天至未来365天内；日期和舱位至少改变一项，不能修改出发地和目的地[1]。\n- 以上为演示规则，不代表真实航空公司政策，金额也仅为演示[1]。\n\n本次仅查询了条款，未生成改签方案，订单未做任何修改。",
+      "sourceTitles": [
+        "演示改签与舱位条款"
+      ],
+      "fixtureOrderIds": [],
+      "verifiedDatabase": [],
+      "providerInputTokens": 5445,
+      "providerOutputTokens": 529,
+      "elapsedMs": 6703
+    },
+    {
+      "id": "O01",
+      "category": "order",
+      "question": "查询订单 {order}",
+      "status": "PASS",
+      "requestIds": [
+        "eb75bc47-58a5-47ec-9275-23befb5e00e5",
+        "c0e380fd-db7c-489e-8f34-c27b7ec12817"
+      ],
+      "answer": "已查询到订单 EVFAB3BC540CE1，信息如下：\n\n| 项目 | 内容 |\n|---|---|\n| 订单号 | EVFAB3BC540CE1 |\n| 航班日期 | 2026-12-24 |\n| 航程 | 南京 NKG → 北京 PEK |\n| 舱位 | 经济舱（ECONOMY） |\n| 状态 | 已确认（CONFIRMED） |\n| 票价 | ¥1000.00（演示金额） |\n\n说明：\n- 本次仅完成订单查询，未生成任何退票或改签方案，订单也未做任何修改。\n- 如需退票或改签，请告知具体需求（改签需提供新日期/舱位），我可以为你准备方案；方案生成后需你在前端确认卡片上点击确认才会生效，文字回复无法执行变更。",
+      "fixtureOrderIds": [
+        "EVFAB3BC540CE1"
+      ],
+      "verifiedDatabase": [
+        {
+          "orderId": "EVFAB3BC540CE1",
+          "state": [
+            "CONFIRMED",
+            "0",
+            "2026-12-24",
+            "ECONOMY",
+            "1000.00"
+          ],
+          "plans": [],
+          "auditOutcomes": []
+        }
+      ],
+      "providerInputTokens": 2157,
+      "providerOutputTokens": 409,
+      "elapsedMs": 4359
+    },
+    {
+      "id": "O03",
+      "category": "order",
+      "question": "请核对我的 {order} 的日期和舱位",
+      "status": "PASS",
+      "requestIds": [
+        "11c95eaa-9d1e-42fb-a3a9-db61ac29a0ad",
+        "b362b4aa-ab24-4116-a050-70a64192a894"
+      ],
+      "answer": "已为您查询订单 **EV575BEF544049**，核对结果如下：\n\n| 项目 | 内容 |\n|---|---|\n| 航班日期 | 2026-12-24 |\n| 舱位 | 经济舱（ECONOMY） |\n| 航线 | 南京 NKG → 北京 PEK |\n| 状态 | 已确认（CONFIRMED） |\n| 票价 | ¥1000.00（演示金额） |\n\n以上信息来自本次订单查询结果，日期与舱位均与订单记录一致。\n\n说明：本次仅完成查询核对，未生成或执行任何变更方案，订单未做修改。如需退票或改签，请告知目标日期或舱位，我可以先为您准备方案；实际变更需您在前端确认卡片上点击确认，并请留意卡片上显示的有效期。",
+      "fixtureOrderIds": [
+        "EV575BEF544049"
+      ],
+      "verifiedDatabase": [
+        {
+          "orderId": "EV575BEF544049",
+          "state": [
+            "CONFIRMED",
+            "0",
+            "2026-12-24",
+            "ECONOMY",
+            "1000.00"
+          ],
+          "plans": [],
+          "auditOutcomes": []
+        }
+      ],
+      "providerInputTokens": 2164,
+      "providerOutputTokens": 381,
+      "elapsedMs": 4109
+    },
+    {
+      "id": "P01",
+      "category": "proposal",
+      "question": "帮我取消订单 {order}",
+      "status": "PASS",
+      "requestIds": [
+        "adb4bad4-46ac-4009-8535-2ed8998f7c7d",
+        "f5bc9807-355b-4c0b-acc4-099889dee370"
+      ],
+      "answer": "已查询订单并生成取消方案，但**订单尚未取消，数据库未做任何修改**。\n\n**订单信息**\n- 订单号：EV86BCC061B481\n- 航班：南京 NKG → 北京 PEK，2026-12-24，经济舱\n- 当前状态：CONFIRMED（订单版本 0）\n\n**已准备的取消方案（PENDING，待确认）**\n- 退票手续费：¥200.00（经济舱票价的 20%）\n- 退款金额：¥800.00（票价 ¥1000.00 − 手续费）\n- 规则版本：demo-v1.0（演示退票服务条款）[1]\n- 方案状态：待确认，尚未执行\n\n**说明**\n- 该订单距离演示起飞时间（2026-12-24 12:00 北京时间）超过 48 小时，符合退票条件[1]。\n- 聊天中的文字确认无效。请你在前端方案卡片上点击确认按钮提交；后端会重新校验订单归属、方案有效期、订单版本与业务规则后才执行[1]。\n- 方案有效期请查看前端确认卡片上显示的有效期；若已过期，需要重新生成方案。\n- 以上金额均为演示数据，不产生真实收费[1]。\n\n如需改为改签方案，请提供新的日期（YYYY-MM-DD）和舱位（经济舱/商务舱）。",
+      "fixtureOrderIds": [
+        "EV86BCC061B481"
+      ],
+      "verifiedDatabase": [
+        {
+          "orderId": "EV86BCC061B481",
+          "state": [
+            "CONFIRMED",
+            "0",
+            "2026-12-24",
+            "ECONOMY",
+            "1000.00"
+          ],
+          "plans": [
+            [
+              "787a4a42-be06-4f54-beac-4ff5af9cbf7c",
+              "PENDING",
+              "200.00",
+              "800.00",
+              "None"
+            ]
+          ],
+          "auditOutcomes": [
+            [
+              "PREPARE",
+              "SUCCESS",
+              1
+            ]
+          ]
+        }
+      ],
+      "providerInputTokens": 6945,
+      "providerOutputTokens": 826,
+      "elapsedMs": 7031
+    },
+    {
+      "id": "P04",
+      "category": "proposal",
+      "question": "订单 {order} 取消要多少手续费？请准备方案",
+      "status": "PASS",
+      "requestIds": [
+        "44e948c4-1658-438b-971b-c4a5d4da846e",
+        "e519414f-f885-4a1f-ad52-f76914a96ea4"
+      ],
+      "answer": "**订单 EV704A7BB18259 取消手续费：¥200.00**（演示金额，不产生真实收费）\n\n**订单信息**\n- 航班：南京 NKG → 北京 PEK\n- 航班日期：2026-12-24（演示起飞时间为当天 12:00，北京时间）\n- 舱位：经济舱 ECONOMY\n- 票价：¥1000.00\n- 状态：CONFIRMED\n- 订单版本：0\n\n**费用计算**\n- 手续费：¥200.00（经济舱票价的 20%）\n- 退款金额：¥800.00\n- 依据：演示退票服务条款 demo-v1.0 [1]\n\n**方案状态：已准备，订单未修改**\n- 方案编号：9f294ca4-939b-4336-8f99-600a8d312311\n- 状态：PENDING（待确认）\n- 当前距航班日期超过 48 小时，符合退票时间要求 [1]\n\n**请注意**\n- 聊天只生成待确认方案，订单数据库保持不变；聊天中的文字确认无效。\n- 请由订单所属的登录用户在页面上的确认卡片中点击确认，后端会重新校验订单归属、方案有效期、订单版本与业务规则后才执行 [1]。\n- 方案有效期请查看前端确认卡片上显示的有效期；若已过期，可让我重新生成。",
+      "fixtureOrderIds": [
+        "EV704A7BB18259"
+      ],
+      "verifiedDatabase": [
+        {
+          "orderId": "EV704A7BB18259",
+          "state": [
+            "CONFIRMED",
+            "0",
+            "2026-12-24",
+            "ECONOMY",
+            "1000.00"
+          ],
+          "plans": [
+            [
+              "9f294ca4-939b-4336-8f99-600a8d312311",
+              "PENDING",
+              "200.00",
+              "800.00",
+              "None"
+            ]
+          ],
+          "auditOutcomes": [
+            [
+              "PREPARE",
+              "SUCCESS",
+              1
+            ]
+          ]
+        }
+      ],
+      "providerInputTokens": 5942,
+      "providerOutputTokens": 857,
+      "elapsedMs": 7281
+    },
+    {
+      "id": "V2_MIXED_1",
+      "category": "v2_mixed",
+      "question": null,
+      "status": "PASS",
+      "requestIds": [
+        "1e6a0e7c-ec7e-4e4e-9397-130c40e1f166",
+        "cc3b8909-2411-4b8c-9eb2-e9df2bc131e9"
+      ],
+      "answer": "## 一、经济舱退票费率与时间限制\n\n依据《演示退票服务条款》demo-v1.0 [1]：\n\n**时间与状态限制**\n- 只有状态为 **CONFIRMED** 的订单可以申请取消；已取消订单不能再次退票。\n- 演示中起飞时间按北京时间航班日期当天 **12:00** 计算。\n- 距起飞 **至少48小时** 才允许退票；**少于48小时则拒绝**。\n\n**手续费与退款**\n- 经济舱 ECONOMY：手续费为票价的 **20%**。\n- 费用按人民币元计算，四舍五入保留两位小数；退款金额 = 票价 − 手续费。\n- 示例：经济舱票价1000元 → 手续费200元，退款800元。\n\n> 该条款仅用于本项目演示，不适用于任何真实航空公司，不产生真实收费。\n\n## 二、订单 EVE54BB1E51ECF 的退票方案（已生成，待确认）\n\n已查询到该订单，并已生成退票方案：\n\n| 项目 | 内容 |\n|---|---|\n| 订单号 | EVE54BB1E51ECF |\n| 航程 | 南京 NKG → 北京 PEK |\n| 航班日期 | 2026-12-24（演示起飞时间12:00） |\n| 舱位 | 经济舱 ECONOMY |\n| 订单状态 | CONFIRMED |\n| 票价 | 1000.00 元 |\n| 订单版本 | 0 |\n| 退票手续费 | **200.00 元** |\n| 退款金额 | **800.00 元** |\n| 规则版本 | demo-v1.0 |\n| 方案状态 | **PENDING（待确认）** |\n\n时间校验：当前为2026-11-24，距2026-12-24 12:00起飞远超48小时，符合退票条件。\n\n## 三、重要提示\n\n- 以上仅为**已准备的待确认方案**，**订单数据库未做任何修改**，聊天中的文字确认无效。\n- 请由订单所属的登录用户本人在页面**点击确认卡片**提交；后端会重新校验归属、有效期、订单版本与业务规则后才执行。\n- 方案有效期请查看前端确认卡片上显示的有效期；若已过期，需要重新生成。",
+      "fixtureOrderIds": [
+        "EVE54BB1E51ECF"
+      ],
+      "verifiedDatabase": [
+        {
+          "orderId": "EVE54BB1E51ECF",
+          "state": [
+            "CONFIRMED",
+            "0",
+            "2026-12-24",
+            "ECONOMY",
+            "1000.00"
+          ],
+          "plans": [
+            [
+              "abc47b2b-df66-4fb4-aa44-417caf4affeb",
+              "PENDING",
+              "200.00",
+              "800.00",
+              "None"
+            ]
+          ],
+          "auditOutcomes": [
+            [
+              "PREPARE",
+              "SUCCESS",
+              1
+            ]
+          ]
+        }
+      ],
+      "providerInputTokens": 11714,
+      "providerOutputTokens": 1549,
+      "elapsedMs": 12125
+    },
+    {
+      "id": "V2_CHANGE_1",
+      "category": "v2_change",
+      "question": null,
+      "status": "PASS",
+      "requestIds": [
+        "3bb5bf33-ee84-4c60-b314-d6b0ef9cb53b",
+        "02aba121-15f8-465c-a1a2-412634aa44cf",
+        "e4886539-f01e-4976-ab88-37f391b9ae14"
+      ],
+      "answer": "已查询订单并生成改签方案，但**订单尚未修改**，当前仅为待确认方案。\n\n**订单信息**\n- 订单号：EVD55B16071EDD\n- 航班：南京 NKG → 北京 PEK，2026-12-24\n- 原舱位：经济舱（ECONOMY）\n- 订单状态：CONFIRMED，版本 0\n\n**已生成的改签方案（PENDING，待确认）**\n- 改签后日期：2027-01-09\n- 改签后舱位：商务舱（BUSINESS）\n- 改签费用：550.00 元（经济舱基础手续费 50 元 + 升舱差价 500 元）\n- 退款：0.00 元\n- 规则版本：demo-v1.0\n\n费用依据演示条款：经济舱改签基础手续费 50 元，经济舱升商务舱另收 500 元固定差价，合计 550 元[1]。新日期与舱位均发生变化，符合“日期和舱位至少改变一项”的要求[1]。以上金额均为演示，不执行真实扣款[1]。\n\n**下一步**\n请在前端确认卡片上点击确认，方案有效期请查看卡片上的提示。文字回复无法代替确认操作；确认时系统会重新核对订单归属、方案归属、订单版本、日期、舱位、费用与幂等状态，过期或旧版本方案将失效[1]。\n\n如需改为其他日期或舱位，请告知。",
+      "verifiedDatabase": [
+        {
+          "orderId": "EVD55B16071EDD",
+          "state": [
+            "CONFIRMED",
+            "1",
+            "2027-01-09",
+            "BUSINESS",
+            "1500.00"
+          ],
+          "plans": [
+            [
+              "67cbe083-a8e7-47c3-befa-0d40adc43172",
+              "EXECUTED",
+              "550.00",
+              "0.00",
+              "1"
+            ]
+          ],
+          "auditOutcomes": [
+            [
+              "CONFIRM",
+              "SUCCESS",
+              1
+            ],
+            [
+              "PREPARE",
+              "SUCCESS",
+              1
+            ]
+          ]
+        }
+      ],
+      "fixtureOrderIds": [
+        "EVD55B16071EDD"
+      ],
+      "providerInputTokens": 7434,
+      "providerOutputTokens": 972,
+      "elapsedMs": 7391
+    },
+    {
+      "id": "V2_IDENTITY_5",
+      "category": "v2_identity",
+      "question": null,
+      "status": "PASS",
+      "requestIds": [
+        "155e7694-94a4-4da0-8782-07096313d426"
+      ],
+      "fixtureOrderIds": [],
+      "verifiedDatabase": [],
+      "providerInputTokens": 0,
+      "providerOutputTokens": 0,
+      "elapsedMs": 47
+    },
+    {
+      "id": "V2_DISCARD_3",
+      "category": "v2_discard",
+      "question": null,
+      "status": "PASS",
+      "requestIds": [
+        "2ede3e6b-1f68-4ef4-ae2a-9579c01fe4dc",
+        "dd15c7d6-fda6-47dc-b381-9e0fafc76e15",
+        "b1e2c8d4-f9d0-464e-839f-532af1639a1a",
+        "800895cd-b9db-4555-a466-d3ecaa3f9a15"
+      ],
+      "fixtureOrderIds": [
+        "EVDD9BD015AF43"
+      ],
+      "verifiedDatabase": [
+        {
+          "orderId": "EVDD9BD015AF43",
+          "state": [
+            "CONFIRMED",
+            "0",
+            "2026-12-24",
+            "ECONOMY",
+            "1000.00"
+          ],
+          "plans": [
+            [
+              "0181ea9f-16d6-4c45-8f64-41b19795c7ed",
+              "DISCARDED",
+              "200.00",
+              "800.00",
+              "None"
+            ]
+          ],
+          "auditOutcomes": [
+            [
+              "CONFIRM",
+              "FAILED",
+              1
+            ],
+            [
+              "DISCARD",
+              "REPLAY",
+              1
+            ],
+            [
+              "DISCARD",
+              "SUCCESS",
+              1
+            ],
+            [
+              "PREPARE",
+              "SUCCESS",
+              1
+            ]
+          ]
+        }
+      ],
+      "providerInputTokens": 945,
+      "providerOutputTokens": 96,
+      "elapsedMs": 1422
+    }
+  ]
+}

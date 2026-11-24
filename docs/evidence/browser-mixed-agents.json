@@ -1,0 +1,20 @@
+{
+  "requestId": "2d17fc6d-39a3-4aaf-a3ea-3c4303b9287d",
+  "roles": [
+    [
+      "coordinator",
+      null,
+      null
+    ],
+    [
+      "knowledge",
+      "terms_qa",
+      "2.0.0"
+    ],
+    [
+      "order",
+      "change_plan",
+      "2.0.0"
+    ]
+  ]
+}

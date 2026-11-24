@@ -1,0 +1,1 @@
+{"id":"order_lookup","version":"2.0.0","description":"仅查询当前登录用户本人订单，不生成或执行变更。","scenarios":["本人订单列表","指定订单日期、舱位、价格和状态"],"agent":"order","inputRequirements":["当前登录态","可选订单编号"],"resultFormat":"owned_orders","allowedTools":["get_my_orders","get_order"],"maxSteps":3,"maxToolCalls":3,"requiredEvidence":["真实订单工具结果"],"failureRules":["越权与不存在统一隐藏","不得从历史推断当前订单状态"]}

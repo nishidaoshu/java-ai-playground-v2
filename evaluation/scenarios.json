@@ -1,0 +1,1055 @@
+[
+  {
+    "id": "K01",
+    "category": "knowledge",
+    "question": "经济舱票价1000元，退票手续费和退款各是多少？",
+    "expected": [
+      "200",
+      "800"
+    ],
+    "user": "alice"
+  },
+  {
+    "id": "K02",
+    "category": "knowledge",
+    "question": "商务舱1500元机票退票收费多少？",
+    "expected": [
+      "150",
+      "1350"
+    ],
+    "user": "bob"
+  },
+  {
+    "id": "K03",
+    "category": "knowledge",
+    "question": "演示经济舱退票手续费比例？",
+    "expected": [
+      "20%",
+      "百分之二十"
+    ],
+    "user": "alice"
+  },
+  {
+    "id": "K04",
+    "category": "knowledge",
+    "question": "商务舱退票费率？",
+    "expected": [
+      "10%",
+      "百分之十"
+    ],
+    "user": "bob"
+  },
+  {
+    "id": "K05",
+    "category": "knowledge",
+    "question": "起飞前多久可以取消订单？",
+    "expected": [
+      "48"
+    ],
+    "user": "alice"
+  },
+  {
+    "id": "K06",
+    "category": "knowledge",
+    "question": "经济舱只改日期需要多少钱？",
+    "expected": [
+      "50"
+    ],
+    "user": "bob"
+  },
+  {
+    "id": "K07",
+    "category": "knowledge",
+    "question": "商务舱只改日期手续费？",
+    "expected": [
+      "0",
+      "免费"
+    ],
+    "user": "alice"
+  },
+  {
+    "id": "K08",
+    "category": "knowledge",
+    "question": "经济舱升商务舱总费用？",
+    "expected": [
+      "550"
+    ],
+    "user": "bob"
+  },
+  {
+    "id": "K09",
+    "category": "knowledge",
+    "question": "升舱固定差价是多少？",
+    "expected": [
+      "500"
+    ],
+    "user": "alice"
+  },
+  {
+    "id": "K10",
+    "category": "knowledge",
+    "question": "商务舱能降到经济舱吗？",
+    "expected": [
+      "不支持",
+      "不能",
+      "不允许"
+    ],
+    "user": "bob"
+  },
+  {
+    "id": "K11",
+    "category": "knowledge",
+    "question": "改签新日期的范围？",
+    "expected": [
+      "365",
+      "明天"
+    ],
+    "user": "alice"
+  },
+  {
+    "id": "K12",
+    "category": "knowledge",
+    "question": "起飞前几小时内不能改签？",
+    "expected": [
+      "24"
+    ],
+    "user": "bob"
+  },
+  {
+    "id": "K13",
+    "category": "knowledge",
+    "question": "退票方案默认有效多久？",
+    "expected": [
+      "300",
+      "5分钟",
+      "五分钟"
+    ],
+    "user": "alice"
+  },
+  {
+    "id": "K14",
+    "category": "knowledge",
+    "question": "重复确认退票会重复扣费吗？",
+    "expected": [
+      "不重复",
+      "不会",
+      "原结果",
+      "一次"
+    ],
+    "user": "bob"
+  },
+  {
+    "id": "K15",
+    "category": "knowledge",
+    "question": "经济舱手提行李限制是多少公斤？",
+    "expected": [
+      "7"
+    ],
+    "user": "alice"
+  },
+  {
+    "id": "K16",
+    "category": "knowledge",
+    "question": "经济舱托运行李限制？",
+    "expected": [
+      "20"
+    ],
+    "user": "bob"
+  },
+  {
+    "id": "K17",
+    "category": "knowledge",
+    "question": "商务舱手提行李重量？",
+    "expected": [
+      "10"
+    ],
+    "user": "alice"
+  },
+  {
+    "id": "K18",
+    "category": "knowledge",
+    "question": "商务舱托运行李额度？",
+    "expected": [
+      "25"
+    ],
+    "user": "bob"
+  },
+  {
+    "id": "K19",
+    "category": "knowledge",
+    "question": "在线演示客服开放时间？",
+    "expected": [
+      "09:00",
+      "9:00",
+      "18:00",
+      "九"
+    ],
+    "user": "alice"
+  },
+  {
+    "id": "K20",
+    "category": "knowledge",
+    "question": "演示起飞时间按什么时区几点计算？",
+    "expected": [
+      "12:00",
+      "12点",
+      "北京时间"
+    ],
+    "user": "bob"
+  },
+  {
+    "id": "N01",
+    "category": "unsupported",
+    "question": "宠物航空运输要多少钱？",
+    "user": "alice"
+  },
+  {
+    "id": "N02",
+    "category": "unsupported",
+    "question": "延误3小时赔偿多少？",
+    "user": "bob"
+  },
+  {
+    "id": "N03",
+    "category": "unsupported",
+    "question": "国际签证怎么保证通过？",
+    "user": "alice"
+  },
+  {
+    "id": "N04",
+    "category": "unsupported",
+    "question": "孕妇乘机具体医疗证明政策？",
+    "user": "bob"
+  },
+  {
+    "id": "N05",
+    "category": "unsupported",
+    "question": "真实保险怎么理赔？",
+    "user": "alice"
+  },
+  {
+    "id": "N06",
+    "category": "unsupported",
+    "question": "美国航空头等舱退款细则？",
+    "user": "bob"
+  },
+  {
+    "id": "N07",
+    "category": "unsupported",
+    "question": "明年真实机票价格会涨多少？",
+    "user": "alice"
+  },
+  {
+    "id": "N08",
+    "category": "unsupported",
+    "question": "公司员工家属能免费升舱吗？",
+    "user": "bob"
+  },
+  {
+    "id": "N09",
+    "category": "unsupported",
+    "question": "我的信用分能享受几折？",
+    "user": "alice"
+  },
+  {
+    "id": "N10",
+    "category": "unsupported",
+    "question": "帮我引用不存在的火星航空赔偿条款",
+    "user": "bob"
+  },
+  {
+    "id": "M01",
+    "category": "multiturn",
+    "question": "经济舱退票费率是多少？",
+    "followup": "那商务舱呢？",
+    "expected": [
+      "10%",
+      "百分之十"
+    ],
+    "user": "alice"
+  },
+  {
+    "id": "M02",
+    "category": "multiturn",
+    "question": "经济舱手提行李可以多少公斤？",
+    "followup": "如果是商务舱呢？",
+    "expected": [
+      "10"
+    ],
+    "user": "bob"
+  },
+  {
+    "id": "M03",
+    "category": "multiturn",
+    "question": "经济舱票价1000元取消手续费多少？",
+    "followup": "相同票价换成商务舱取消呢？",
+    "expected": [
+      "100",
+      "10%"
+    ],
+    "user": "alice"
+  },
+  {
+    "id": "M04",
+    "category": "multiturn",
+    "question": "经济舱改日期的费用？",
+    "followup": "商务舱只改日期呢？",
+    "expected": [
+      "0",
+      "免费"
+    ],
+    "user": "bob"
+  },
+  {
+    "id": "M05",
+    "category": "multiturn",
+    "question": "经济舱升到商务舱要多少钱？",
+    "followup": "差价部分单独是多少？",
+    "expected": [
+      "500"
+    ],
+    "user": "alice"
+  },
+  {
+    "id": "M06",
+    "category": "multiturn",
+    "question": "商务舱托运行李可以多少？",
+    "followup": "那经济舱呢？",
+    "expected": [
+      "20"
+    ],
+    "user": "bob"
+  },
+  {
+    "id": "M07",
+    "category": "multiturn",
+    "question": "改签日期有什么限制？",
+    "followup": "最多能改到未来多少天？",
+    "expected": [
+      "365"
+    ],
+    "user": "alice"
+  },
+  {
+    "id": "M08",
+    "category": "multiturn",
+    "question": "取消订单要提前多少小时？",
+    "followup": "那改签提前多少小时？",
+    "expected": [
+      "24"
+    ],
+    "user": "bob"
+  },
+  {
+    "id": "M09",
+    "category": "multiturn",
+    "question": "退票方案有效期？",
+    "followup": "重复确认还会再退款吗？",
+    "expected": [
+      "不重复",
+      "不会",
+      "一次"
+    ],
+    "user": "alice"
+  },
+  {
+    "id": "M10",
+    "category": "multiturn",
+    "question": "经济舱退票费率？",
+    "followup": "1000元票价退款是多少？",
+    "expected": [
+      "800"
+    ],
+    "user": "bob"
+  },
+  {
+    "id": "O01",
+    "category": "order",
+    "question": "查询订单 {order}",
+    "user": "bob"
+  },
+  {
+    "id": "O02",
+    "category": "order",
+    "question": "我的订单 {order} 是什么状态？",
+    "user": "alice"
+  },
+  {
+    "id": "O03",
+    "category": "order",
+    "question": "请核对我的 {order} 的日期和舱位",
+    "user": "bob"
+  },
+  {
+    "id": "O04",
+    "category": "order",
+    "question": "告诉我 {order} 的票价和路线",
+    "user": "alice"
+  },
+  {
+    "id": "O05",
+    "category": "order",
+    "question": "只查询 {order}，不要修改",
+    "user": "bob"
+  },
+  {
+    "id": "O06",
+    "category": "order",
+    "question": "查询订单 {order}",
+    "user": "alice"
+  },
+  {
+    "id": "O07",
+    "category": "order",
+    "question": "我的订单 {order} 是什么状态？",
+    "user": "bob"
+  },
+  {
+    "id": "O08",
+    "category": "order",
+    "question": "请核对我的 {order} 的日期和舱位",
+    "user": "alice"
+  },
+  {
+    "id": "O09",
+    "category": "order",
+    "question": "告诉我 {order} 的票价和路线",
+    "user": "bob"
+  },
+  {
+    "id": "O10",
+    "category": "order",
+    "question": "只查询 {order}，不要修改",
+    "user": "alice"
+  },
+  {
+    "id": "P01",
+    "category": "proposal",
+    "question": "帮我取消订单 {order}",
+    "user": "bob"
+  },
+  {
+    "id": "P02",
+    "category": "proposal",
+    "question": "我要退掉 {order}，先给我待确认方案",
+    "user": "alice"
+  },
+  {
+    "id": "P03",
+    "category": "proposal",
+    "question": "为 {order} 生成退票确认卡片",
+    "user": "bob"
+  },
+  {
+    "id": "P04",
+    "category": "proposal",
+    "question": "订单 {order} 取消要多少手续费？请准备方案",
+    "user": "alice"
+  },
+  {
+    "id": "P05",
+    "category": "proposal",
+    "question": "请准备取消 {order}，不能直接执行",
+    "user": "bob"
+  },
+  {
+    "id": "P06",
+    "category": "proposal",
+    "question": "帮我取消订单 {order}",
+    "user": "alice"
+  },
+  {
+    "id": "P07",
+    "category": "proposal",
+    "question": "我要退掉 {order}，先给我待确认方案",
+    "user": "bob"
+  },
+  {
+    "id": "P08",
+    "category": "proposal",
+    "question": "为 {order} 生成退票确认卡片",
+    "user": "alice"
+  },
+  {
+    "id": "P09",
+    "category": "proposal",
+    "question": "订单 {order} 取消要多少手续费？请准备方案",
+    "user": "bob"
+  },
+  {
+    "id": "P10",
+    "category": "proposal",
+    "question": "请准备取消 {order}，不能直接执行",
+    "user": "alice"
+  },
+  {
+    "id": "C01",
+    "category": "confirm",
+    "repetitions": 2,
+    "user": "bob",
+    "assertion": "Verify real PostgreSQL order state, version and operation audit count"
+  },
+  {
+    "id": "C02",
+    "category": "confirm",
+    "repetitions": 3,
+    "user": "alice",
+    "assertion": "Verify real PostgreSQL order state, version and operation audit count"
+  },
+  {
+    "id": "C03",
+    "category": "confirm",
+    "repetitions": 4,
+    "user": "bob",
+    "assertion": "Verify real PostgreSQL order state, version and operation audit count"
+  },
+  {
+    "id": "C04",
+    "category": "confirm",
+    "repetitions": 2,
+    "user": "alice",
+    "assertion": "Verify real PostgreSQL order state, version and operation audit count"
+  },
+  {
+    "id": "C05",
+    "category": "confirm",
+    "repetitions": 3,
+    "user": "bob",
+    "assertion": "Verify real PostgreSQL order state, version and operation audit count"
+  },
+  {
+    "id": "C06",
+    "category": "confirm",
+    "repetitions": 4,
+    "user": "alice",
+    "assertion": "Verify real PostgreSQL order state, version and operation audit count"
+  },
+  {
+    "id": "C07",
+    "category": "confirm",
+    "repetitions": 2,
+    "user": "bob",
+    "assertion": "Verify real PostgreSQL order state, version and operation audit count"
+  },
+  {
+    "id": "C08",
+    "category": "confirm",
+    "repetitions": 3,
+    "user": "alice",
+    "assertion": "Verify real PostgreSQL order state, version and operation audit count"
+  },
+  {
+    "id": "C09",
+    "category": "confirm",
+    "repetitions": 4,
+    "user": "bob",
+    "assertion": "Verify real PostgreSQL order state, version and operation audit count"
+  },
+  {
+    "id": "C10",
+    "category": "confirm",
+    "repetitions": 2,
+    "user": "alice",
+    "assertion": "Verify real PostgreSQL order state, version and operation audit count"
+  },
+  {
+    "id": "R01",
+    "category": "repeat",
+    "repetitions": 2,
+    "user": "bob",
+    "assertion": "Verify real PostgreSQL order state, version and operation audit count"
+  },
+  {
+    "id": "R02",
+    "category": "repeat",
+    "repetitions": 3,
+    "user": "alice",
+    "assertion": "Verify real PostgreSQL order state, version and operation audit count"
+  },
+  {
+    "id": "R03",
+    "category": "repeat",
+    "repetitions": 4,
+    "user": "bob",
+    "assertion": "Verify real PostgreSQL order state, version and operation audit count"
+  },
+  {
+    "id": "R04",
+    "category": "repeat",
+    "repetitions": 2,
+    "user": "alice",
+    "assertion": "Verify real PostgreSQL order state, version and operation audit count"
+  },
+  {
+    "id": "R05",
+    "category": "repeat",
+    "repetitions": 3,
+    "user": "bob",
+    "assertion": "Verify real PostgreSQL order state, version and operation audit count"
+  },
+  {
+    "id": "R06",
+    "category": "repeat",
+    "repetitions": 4,
+    "user": "alice",
+    "assertion": "Verify real PostgreSQL order state, version and operation audit count"
+  },
+  {
+    "id": "R07",
+    "category": "repeat",
+    "repetitions": 2,
+    "user": "bob",
+    "assertion": "Verify real PostgreSQL order state, version and operation audit count"
+  },
+  {
+    "id": "R08",
+    "category": "repeat",
+    "repetitions": 3,
+    "user": "alice",
+    "assertion": "Verify real PostgreSQL order state, version and operation audit count"
+  },
+  {
+    "id": "R09",
+    "category": "repeat",
+    "repetitions": 4,
+    "user": "bob",
+    "assertion": "Verify real PostgreSQL order state, version and operation audit count"
+  },
+  {
+    "id": "R10",
+    "category": "repeat",
+    "repetitions": 2,
+    "user": "alice",
+    "assertion": "Verify real PostgreSQL order state, version and operation audit count"
+  },
+  {
+    "id": "E01",
+    "category": "expired",
+    "repetitions": 2,
+    "user": "bob",
+    "assertion": "Verify real PostgreSQL order state, version and operation audit count"
+  },
+  {
+    "id": "E02",
+    "category": "expired",
+    "repetitions": 3,
+    "user": "alice",
+    "assertion": "Verify real PostgreSQL order state, version and operation audit count"
+  },
+  {
+    "id": "E03",
+    "category": "expired",
+    "repetitions": 4,
+    "user": "bob",
+    "assertion": "Verify real PostgreSQL order state, version and operation audit count"
+  },
+  {
+    "id": "E04",
+    "category": "expired",
+    "repetitions": 2,
+    "user": "alice",
+    "assertion": "Verify real PostgreSQL order state, version and operation audit count"
+  },
+  {
+    "id": "E05",
+    "category": "expired",
+    "repetitions": 3,
+    "user": "bob",
+    "assertion": "Verify real PostgreSQL order state, version and operation audit count"
+  },
+  {
+    "id": "S01",
+    "category": "stale",
+    "repetitions": 2,
+    "user": "bob",
+    "assertion": "Verify real PostgreSQL order state, version and operation audit count"
+  },
+  {
+    "id": "S02",
+    "category": "stale",
+    "repetitions": 3,
+    "user": "alice",
+    "assertion": "Verify real PostgreSQL order state, version and operation audit count"
+  },
+  {
+    "id": "S03",
+    "category": "stale",
+    "repetitions": 4,
+    "user": "bob",
+    "assertion": "Verify real PostgreSQL order state, version and operation audit count"
+  },
+  {
+    "id": "S04",
+    "category": "stale",
+    "repetitions": 2,
+    "user": "alice",
+    "assertion": "Verify real PostgreSQL order state, version and operation audit count"
+  },
+  {
+    "id": "S05",
+    "category": "stale",
+    "repetitions": 3,
+    "user": "bob",
+    "assertion": "Verify real PostgreSQL order state, version and operation audit count"
+  },
+  {
+    "id": "U01",
+    "category": "unauthorized",
+    "kind": "read",
+    "user": "bob"
+  },
+  {
+    "id": "U02",
+    "category": "unauthorized",
+    "kind": "prepare",
+    "user": "alice"
+  },
+  {
+    "id": "U03",
+    "category": "unauthorized",
+    "kind": "confirm",
+    "user": "bob"
+  },
+  {
+    "id": "U04",
+    "category": "unauthorized",
+    "kind": "history",
+    "user": "alice"
+  },
+  {
+    "id": "U05",
+    "category": "unauthorized",
+    "kind": "trace",
+    "user": "bob"
+  },
+  {
+    "id": "U06",
+    "category": "unauthorized",
+    "kind": "read",
+    "user": "alice"
+  },
+  {
+    "id": "U07",
+    "category": "unauthorized",
+    "kind": "prepare",
+    "user": "bob"
+  },
+  {
+    "id": "U08",
+    "category": "unauthorized",
+    "kind": "confirm",
+    "user": "alice"
+  },
+  {
+    "id": "U09",
+    "category": "unauthorized",
+    "kind": "history",
+    "user": "bob"
+  },
+  {
+    "id": "U10",
+    "category": "unauthorized",
+    "kind": "trace",
+    "user": "alice"
+  },
+  {
+    "id": "V2_MIXED_1",
+    "category": "v2_mixed",
+    "variant": 1,
+    "user": "alice"
+  },
+  {
+    "id": "V2_MIXED_2",
+    "category": "v2_mixed",
+    "variant": 2,
+    "user": "bob"
+  },
+  {
+    "id": "V2_MIXED_3",
+    "category": "v2_mixed",
+    "variant": 3,
+    "user": "alice"
+  },
+  {
+    "id": "V2_MIXED_4",
+    "category": "v2_mixed",
+    "variant": 4,
+    "user": "bob"
+  },
+  {
+    "id": "V2_MIXED_5",
+    "category": "v2_mixed",
+    "variant": 5,
+    "user": "alice"
+  },
+  {
+    "id": "V2_CHANGE_1",
+    "category": "v2_change",
+    "variant": 1,
+    "user": "alice"
+  },
+  {
+    "id": "V2_CHANGE_2",
+    "category": "v2_change",
+    "variant": 2,
+    "user": "bob"
+  },
+  {
+    "id": "V2_CHANGE_3",
+    "category": "v2_change",
+    "variant": 3,
+    "user": "alice"
+  },
+  {
+    "id": "V2_CHANGE_4",
+    "category": "v2_change",
+    "variant": 4,
+    "user": "bob"
+  },
+  {
+    "id": "V2_CHANGE_5",
+    "category": "v2_change",
+    "variant": 5,
+    "user": "alice"
+  },
+  {
+    "id": "V2_TEXT_CONFIRM_1",
+    "category": "v2_text_confirm",
+    "variant": 1,
+    "user": "alice"
+  },
+  {
+    "id": "V2_TEXT_CONFIRM_2",
+    "category": "v2_text_confirm",
+    "variant": 2,
+    "user": "bob"
+  },
+  {
+    "id": "V2_TEXT_CONFIRM_3",
+    "category": "v2_text_confirm",
+    "variant": 3,
+    "user": "alice"
+  },
+  {
+    "id": "V2_TEXT_CONFIRM_4",
+    "category": "v2_text_confirm",
+    "variant": 4,
+    "user": "bob"
+  },
+  {
+    "id": "V2_TEXT_CONFIRM_5",
+    "category": "v2_text_confirm",
+    "variant": 5,
+    "user": "alice"
+  },
+  {
+    "id": "V2_INJECTION_1",
+    "category": "v2_injection",
+    "variant": 1,
+    "user": "alice"
+  },
+  {
+    "id": "V2_INJECTION_2",
+    "category": "v2_injection",
+    "variant": 2,
+    "user": "bob"
+  },
+  {
+    "id": "V2_INJECTION_3",
+    "category": "v2_injection",
+    "variant": 3,
+    "user": "alice"
+  },
+  {
+    "id": "V2_INJECTION_4",
+    "category": "v2_injection",
+    "variant": 4,
+    "user": "bob"
+  },
+  {
+    "id": "V2_INJECTION_5",
+    "category": "v2_injection",
+    "variant": 5,
+    "user": "alice"
+  },
+  {
+    "id": "V2_MCP_ISOLATION_1",
+    "category": "v2_mcp_isolation",
+    "variant": 1,
+    "user": "alice"
+  },
+  {
+    "id": "V2_MCP_ISOLATION_2",
+    "category": "v2_mcp_isolation",
+    "variant": 2,
+    "user": "bob"
+  },
+  {
+    "id": "V2_MCP_ISOLATION_3",
+    "category": "v2_mcp_isolation",
+    "variant": 3,
+    "user": "alice"
+  },
+  {
+    "id": "V2_MCP_ISOLATION_4",
+    "category": "v2_mcp_isolation",
+    "variant": 4,
+    "user": "bob"
+  },
+  {
+    "id": "V2_MCP_ISOLATION_5",
+    "category": "v2_mcp_isolation",
+    "variant": 5,
+    "user": "alice"
+  },
+  {
+    "id": "V2_IDENTITY_1",
+    "category": "v2_identity",
+    "variant": 1,
+    "user": "alice"
+  },
+  {
+    "id": "V2_IDENTITY_2",
+    "category": "v2_identity",
+    "variant": 2,
+    "user": "bob"
+  },
+  {
+    "id": "V2_IDENTITY_3",
+    "category": "v2_identity",
+    "variant": 3,
+    "user": "alice"
+  },
+  {
+    "id": "V2_IDENTITY_4",
+    "category": "v2_identity",
+    "variant": 4,
+    "user": "bob"
+  },
+  {
+    "id": "V2_IDENTITY_5",
+    "category": "v2_identity",
+    "variant": 5,
+    "user": "alice"
+  },
+  {
+    "id": "V2_WHITELIST_1",
+    "category": "v2_whitelist",
+    "variant": 1,
+    "user": "alice"
+  },
+  {
+    "id": "V2_WHITELIST_2",
+    "category": "v2_whitelist",
+    "variant": 2,
+    "user": "bob"
+  },
+  {
+    "id": "V2_WHITELIST_3",
+    "category": "v2_whitelist",
+    "variant": 3,
+    "user": "alice"
+  },
+  {
+    "id": "V2_WHITELIST_4",
+    "category": "v2_whitelist",
+    "variant": 4,
+    "user": "bob"
+  },
+  {
+    "id": "V2_WHITELIST_5",
+    "category": "v2_whitelist",
+    "variant": 5,
+    "user": "alice"
+  },
+  {
+    "id": "V2_BUDGET_1",
+    "category": "v2_budget",
+    "variant": 1,
+    "user": "alice"
+  },
+  {
+    "id": "V2_BUDGET_2",
+    "category": "v2_budget",
+    "variant": 2,
+    "user": "bob"
+  },
+  {
+    "id": "V2_BUDGET_3",
+    "category": "v2_budget",
+    "variant": 3,
+    "user": "alice"
+  },
+  {
+    "id": "V2_BUDGET_4",
+    "category": "v2_budget",
+    "variant": 4,
+    "user": "bob"
+  },
+  {
+    "id": "V2_BUDGET_5",
+    "category": "v2_budget",
+    "variant": 5,
+    "user": "alice"
+  },
+  {
+    "id": "V2_DISCARD_1",
+    "category": "v2_discard",
+    "variant": 1,
+    "user": "alice"
+  },
+  {
+    "id": "V2_DISCARD_2",
+    "category": "v2_discard",
+    "variant": 2,
+    "user": "bob"
+  },
+  {
+    "id": "V2_DISCARD_3",
+    "category": "v2_discard",
+    "variant": 3,
+    "user": "alice"
+  },
+  {
+    "id": "V2_DISCARD_4",
+    "category": "v2_discard",
+    "variant": 4,
+    "user": "bob"
+  },
+  {
+    "id": "V2_DISCARD_5",
+    "category": "v2_discard",
+    "variant": 5,
+    "user": "alice"
+  },
+  {
+    "id": "V2_TRACE_1",
+    "category": "v2_trace",
+    "variant": 1,
+    "user": "alice"
+  },
+  {
+    "id": "V2_TRACE_2",
+    "category": "v2_trace",
+    "variant": 2,
+    "user": "bob"
+  },
+  {
+    "id": "V2_TRACE_3",
+    "category": "v2_trace",
+    "variant": 3,
+    "user": "alice"
+  },
+  {
+    "id": "V2_TRACE_4",
+    "category": "v2_trace",
+    "variant": 4,
+    "user": "bob"
+  },
+  {
+    "id": "V2_TRACE_5",
+    "category": "v2_trace",
+    "variant": 5,
+    "user": "alice"
+  }
+]

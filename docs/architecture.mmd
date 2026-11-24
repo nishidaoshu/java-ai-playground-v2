@@ -1,0 +1,20 @@
+flowchart TB
+ B[React 浏览器 / Session + CSRF] --> A[8082 Spring Boot API]
+ A --> C[协调 Agent / 路由与改写]
+ C --> K[知识 Agent / terms_qa]
+ C --> O[订单 Agent / order_lookup 或 change_plan]
+ S[Schema校验 SkillRegistry] --> K
+ S --> O
+ K --> MC[官方 MCP Java 客户端 0.14.1]
+ O --> MC
+ MC -->|Streamable HTTP / 服务令牌 + 短期签名上下文| MS[18084 独立 MCP JVM / 5工具]
+ MS --> R[共享源码 RagService + WorkflowService]
+ A -->|仅Session + CSRF确认/丢弃| W[TransactionalWorkflow / 锁与SQL复核]
+ R --> PG[(V2 PostgreSQL + pgvector / 15433)]
+ W --> PG
+ C --> D[DeepSeek deepseek-flash / thinking关闭]
+ K --> D
+ O --> D
+ R -->|LLM重排| D
+ R --> E[18083 BGE ONNX CPU / 512维]
+ G[跨进程 request_budgets + agent_runs + trace_events] --- PG

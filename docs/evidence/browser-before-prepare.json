@@ -1,0 +1,151 @@
+{
+  "stage": "before-prepare",
+  "recordedAt": "2026-11-24T12:25:12.650485+00:00",
+  "flight_orders": {
+    "count": 8,
+    "sha256": "8ee7505e14f698ecffc044ef7af6672b7451d0d5793131cef4293eabc7de20d6",
+    "rows": [
+      {
+        "id": "A1001",
+        "user_id": 1,
+        "flight_date": "2026-12-09",
+        "origin": "南京 NKG",
+        "destination": "北京 PEK",
+        "cabin": "ECONOMY",
+        "status": "CONFIRMED",
+        "fare": 1000.0,
+        "version": 0
+      },
+      {
+        "id": "A1002",
+        "user_id": 1,
+        "flight_date": "2026-12-10",
+        "origin": "南京 NKG",
+        "destination": "上海 SHA",
+        "cabin": "ECONOMY",
+        "status": "CONFIRMED",
+        "fare": 1000.0,
+        "version": 0
+      },
+      {
+        "id": "A1003",
+        "user_id": 1,
+        "flight_date": "2026-12-11",
+        "origin": "南京 NKG",
+        "destination": "北京 PEK",
+        "cabin": "ECONOMY",
+        "status": "CONFIRMED",
+        "fare": 1000.0,
+        "version": 0
+      },
+      {
+        "id": "A1004",
+        "user_id": 1,
+        "flight_date": "2026-12-12",
+        "origin": "南京 NKG",
+        "destination": "上海 SHA",
+        "cabin": "BUSINESS",
+        "status": "CONFIRMED",
+        "fare": 1500.0,
+        "version": 0
+      },
+      {
+        "id": "B1001",
+        "user_id": 2,
+        "flight_date": "2026-12-09",
+        "origin": "南京 NKG",
+        "destination": "北京 PEK",
+        "cabin": "ECONOMY",
+        "status": "CONFIRMED",
+        "fare": 1000.0,
+        "version": 0
+      },
+      {
+        "id": "B1002",
+        "user_id": 2,
+        "flight_date": "2026-12-10",
+        "origin": "南京 NKG",
+        "destination": "上海 SHA",
+        "cabin": "ECONOMY",
+        "status": "CONFIRMED",
+        "fare": 1000.0,
+        "version": 0
+      },
+      {
+        "id": "B1003",
+        "user_id": 2,
+        "flight_date": "2026-12-11",
+        "origin": "南京 NKG",
+        "destination": "北京 PEK",
+        "cabin": "ECONOMY",
+        "status": "CONFIRMED",
+        "fare": 1000.0,
+        "version": 0
+      },
+      {
+        "id": "B1004",
+        "user_id": 2,
+        "flight_date": "2026-12-12",
+        "origin": "南京 NKG",
+        "destination": "上海 SHA",
+        "cabin": "BUSINESS",
+        "status": "CONFIRMED",
+        "fare": 1500.0,
+        "version": 0
+      }
+    ]
+  },
+  "operation_plans": {
+    "count": 1,
+    "sha256": "e971b4677573192c6146693bc232dddd9f4c0bfb9e21f300d939bcd417d93cdf",
+    "rows": [
+      {
+        "id": "97710a93-3601-4fcc-961d-226728e898ed",
+        "user_id": 2,
+        "order_id": "B1004",
+        "order_version": 0,
+        "action": "CANCEL",
+        "new_date": null,
+        "new_cabin": null,
+        "fee": 150.0,
+        "refund": 1350.0,
+        "expires_at": "2026-11-24T11:54:51.355304+00:00",
+        "created_at": "2026-11-24T11:49:51.355304+00:00",
+        "status": "PENDING",
+        "rule_version": "demo-v1.0",
+        "evidence": "[{\"chunkId\":\"9043306c-5844-46bd-9bae-a7688733ab4b\",\"documentId\":\"0dac457a-b67f-4c36-ab1b-1921c7855504\",\"title\":\"演示退票服务条款\",\"version\":\"demo-v1.0\",\"excerpt\":\"# 演示退票服务条款\\n版本：demo-v1.0。仅用于本项目演示，不适用于任何真实航空公司，不产生真实收费。\\n\\n## 退票时间与状态\\n只有状态为 CONFIRMED 的订单可以申请取消。以北京时间 Asia/Shanghai 的航班日期当天12:00作为演示起飞时间；距离起飞至少48小时才允许退票，少于48小时拒绝。已取消订单不能再次退票。\\n\\n## 退票手续费与退款\\n经济舱 ECONOMY 取消手续费为订单票价的20%；商务舱 BUSINESS 为票价的10%。费用按人民币元计算，四舍五入保留两位小数。退款金额等于票价减去手续费。例如经济舱票价1000元，手续费200元，退款800元；商务舱票价1500元，手续费150元，退款1350元。\\n\\n## 确认与安全\\n聊天只生成待确认方案，订单数据库保持不变。方案有效期默认300秒；必须由订单所属的登录用户在页面点击确认，后端重查归属、有效期、订单版本与业务规则后才执行。重复确认只返回原\",\"similarity\":0.7082739646271501,\"rerank\":1.0,\"authoritative\":true}]",
+        "executed_at": null,
+        "result_version": null
+      }
+    ]
+  },
+  "operation_records": {
+    "count": 1,
+    "sha256": "71673ca7270c5ef62a9a8cb45bc398dd22d1e96c85816cdd3e2f07be5c16efe1",
+    "rows": [
+      {
+        "id": "37bafbfb-39b6-4a70-93bc-7f9211bd98fe",
+        "user_id": 2,
+        "plan_id": "97710a93-3601-4fcc-961d-226728e898ed",
+        "order_id": "B1004",
+        "action": "PREPARE",
+        "outcome": "SUCCESS",
+        "reason": "方案已生成，订单尚未变化",
+        "request_id": "24c4d435-1443-4728-840e-f1573526cb19",
+        "created_at": "2026-11-24T11:49:51.390604+00:00"
+      }
+    ]
+  },
+  "knowledge_documents": {
+    "count": 3,
+    "sha256": "83654c64e523c338b419f70da8c8c4a53b7ded2aec57460c0cce9020a9ad1018"
+  },
+  "conversations": {
+    "count": 146,
+    "sha256": "dd7bac4d9fff32e570a46f84f1d09d621ff4b3fff663211cf27405567bfc63d1"
+  },
+  "chat_messages": {
+    "count": 321,
+    "sha256": "d44a56c39f6a60af9c9c31bdf259e422750dfe11aa52f97765a741971170e193"
+  }
+}

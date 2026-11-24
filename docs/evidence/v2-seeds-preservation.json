@@ -1,0 +1,183 @@
+{
+  "equal": true,
+  "before": [
+    {
+      "id": "A1001",
+      "user_id": 1,
+      "flight_date": "2026-12-09",
+      "origin": "南京 NKG",
+      "destination": "北京 PEK",
+      "cabin": "ECONOMY",
+      "status": "CONFIRMED",
+      "fare": 1000.0,
+      "version": 0
+    },
+    {
+      "id": "A1002",
+      "user_id": 1,
+      "flight_date": "2026-12-10",
+      "origin": "南京 NKG",
+      "destination": "上海 SHA",
+      "cabin": "ECONOMY",
+      "status": "CONFIRMED",
+      "fare": 1000.0,
+      "version": 0
+    },
+    {
+      "id": "A1003",
+      "user_id": 1,
+      "flight_date": "2026-12-11",
+      "origin": "南京 NKG",
+      "destination": "北京 PEK",
+      "cabin": "ECONOMY",
+      "status": "CONFIRMED",
+      "fare": 1000.0,
+      "version": 0
+    },
+    {
+      "id": "A1004",
+      "user_id": 1,
+      "flight_date": "2026-12-12",
+      "origin": "南京 NKG",
+      "destination": "上海 SHA",
+      "cabin": "BUSINESS",
+      "status": "CONFIRMED",
+      "fare": 1500.0,
+      "version": 0
+    },
+    {
+      "id": "B1001",
+      "user_id": 2,
+      "flight_date": "2026-12-09",
+      "origin": "南京 NKG",
+      "destination": "北京 PEK",
+      "cabin": "ECONOMY",
+      "status": "CONFIRMED",
+      "fare": 1000.0,
+      "version": 0
+    },
+    {
+      "id": "B1002",
+      "user_id": 2,
+      "flight_date": "2026-12-10",
+      "origin": "南京 NKG",
+      "destination": "上海 SHA",
+      "cabin": "ECONOMY",
+      "status": "CONFIRMED",
+      "fare": 1000.0,
+      "version": 0
+    },
+    {
+      "id": "B1003",
+      "user_id": 2,
+      "flight_date": "2026-12-11",
+      "origin": "南京 NKG",
+      "destination": "北京 PEK",
+      "cabin": "ECONOMY",
+      "status": "CONFIRMED",
+      "fare": 1000.0,
+      "version": 0
+    },
+    {
+      "id": "B1004",
+      "user_id": 2,
+      "flight_date": "2026-12-12",
+      "origin": "南京 NKG",
+      "destination": "上海 SHA",
+      "cabin": "BUSINESS",
+      "status": "CONFIRMED",
+      "fare": 1500.0,
+      "version": 0
+    }
+  ],
+  "after": [
+    {
+      "id": "A1001",
+      "user_id": 1,
+      "flight_date": "2026-12-09",
+      "origin": "南京 NKG",
+      "destination": "北京 PEK",
+      "cabin": "ECONOMY",
+      "status": "CONFIRMED",
+      "fare": 1000.0,
+      "version": 0
+    },
+    {
+      "id": "A1002",
+      "user_id": 1,
+      "flight_date": "2026-12-10",
+      "origin": "南京 NKG",
+      "destination": "上海 SHA",
+      "cabin": "ECONOMY",
+      "status": "CONFIRMED",
+      "fare": 1000.0,
+      "version": 0
+    },
+    {
+      "id": "A1003",
+      "user_id": 1,
+      "flight_date": "2026-12-11",
+      "origin": "南京 NKG",
+      "destination": "北京 PEK",
+      "cabin": "ECONOMY",
+      "status": "CONFIRMED",
+      "fare": 1000.0,
+      "version": 0
+    },
+    {
+      "id": "A1004",
+      "user_id": 1,
+      "flight_date": "2026-12-12",
+      "origin": "南京 NKG",
+      "destination": "上海 SHA",
+      "cabin": "BUSINESS",
+      "status": "CONFIRMED",
+      "fare": 1500.0,
+      "version": 0
+    },
+    {
+      "id": "B1001",
+      "user_id": 2,
+      "flight_date": "2026-12-09",
+      "origin": "南京 NKG",
+      "destination": "北京 PEK",
+      "cabin": "ECONOMY",
+      "status": "CONFIRMED",
+      "fare": 1000.0,
+      "version": 0
+    },
+    {
+      "id": "B1002",
+      "user_id": 2,
+      "flight_date": "2026-12-10",
+      "origin": "南京 NKG",
+      "destination": "上海 SHA",
+      "cabin": "ECONOMY",
+      "status": "CONFIRMED",
+      "fare": 1000.0,
+      "version": 0
+    },
+    {
+      "id": "B1003",
+      "user_id": 2,
+      "flight_date": "2026-12-11",
+      "origin": "南京 NKG",
+      "destination": "北京 PEK",
+      "cabin": "ECONOMY",
+      "status": "CONFIRMED",
+      "fare": 1000.0,
+      "version": 0
+    },
+    {
+      "id": "B1004",
+      "user_id": 2,
+      "flight_date": "2026-12-12",
+      "origin": "南京 NKG",
+      "destination": "上海 SHA",
+      "cabin": "BUSINESS",
+      "status": "CONFIRMED",
+      "fare": 1500.0,
+      "version": 0
+    }
+  ]
+}

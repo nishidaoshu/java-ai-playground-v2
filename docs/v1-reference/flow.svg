@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="1680" viewBox="0 0 2200 1680"><rect width="100%" height="100%" fill="#f6f8f2"/>
+<text x="100" y="83" font-family="Microsoft YaHei,sans-serif" text-anchor="start" font-size="24" fill="#7a997a">JAVA AI PLAYGROUND / V1</text>
+<text x="100" y="151" font-family="Microsoft YaHei,sans-serif" text-anchor="start" font-size="47" fill="#244e35">有依据的回答，可控的订单操作</text>
+<text x="100" y="198" font-family="Microsoft YaHei,sans-serif" text-anchor="start" font-size="23" fill="#7b907b">实际实现流程 · Java 21 / Spring Boot / LangChain4j / React Hilla</text>
+<rect x="690" y="245" width="820" height="105" rx="17" fill="#e8f1ed" stroke="#92b5a3" stroke-width="2"/>
+<text x="1100.0" y="289.0" font-family="Microsoft YaHei,sans-serif" text-anchor="middle" font-size="28" fill="#294e38">登录与请求入口</text>
+<text x="1100.0" y="323.0" font-family="Microsoft YaHei,sans-serif" text-anchor="middle" font-size="25" fill="#294e38">Session + CSRF · 从后端解析用户 · 请求关联 ID</text>
+<rect x="690" y="400" width="820" height="105" rx="17" fill="#edf5e8" stroke="#a8c3a5" stroke-width="2"/>
+<text x="1100.0" y="444.0" font-family="Microsoft YaHei,sans-serif" text-anchor="middle" font-size="28" fill="#294e38">DeepSeek 上下文改写与工具决策</text>
+<text x="1100.0" y="478.0" font-family="Microsoft YaHei,sans-serif" text-anchor="middle" font-size="25" fill="#294e38">最多3轮 / 8次工具调用 · 身份不可由模型更改</text>
+<line x1="1100" y1="350" x2="1100" y2="400" stroke="#90ab91" stroke-width="4"/><polygon points="1100,400 1093.4755169883315,386.49329346470984 1106.5244830116685,386.49329346470984" fill="#90ab91"/>
+<rect x="80" y="570" width="890" height="100" rx="17" fill="#edf5e8" stroke="#a8c3a5" stroke-width="2"/>
+<text x="525.0" y="611.5" font-family="Microsoft YaHei,sans-serif" text-anchor="middle" font-size="28" fill="#294e38">知识路径：解析 → 分段 → 中文 Embedding</text>
+<text x="525.0" y="645.5" font-family="Microsoft YaHei,sans-serif" text-anchor="middle" font-size="25" fill="#294e38">TXT / Markdown · BGE-small-zh-v1.5 · CPU ONNX int8</text>
+<rect x="1230" y="570" width="890" height="100" rx="17" fill="#edf5e8" stroke="#a8c3a5" stroke-width="2"/>
+<text x="1675.0" y="611.5" font-family="Microsoft YaHei,sans-serif" text-anchor="middle" font-size="28" fill="#294e38">订单路径：查询 → 检索规则 → 后端算费</text>
+<text x="1675.0" y="645.5" font-family="Microsoft YaHei,sans-serif" text-anchor="middle" font-size="25" fill="#294e38">订单归属检查 · 只生成方案，不修改订单</text>
+<line x1="900" y1="505" x2="525" y2="570" stroke="#90ab91" stroke-width="4"/><polygon points="525,570 537.1939712020769,561.2646084047183 539.4225613547344,574.1218592854345" fill="#90ab91"/>
+<line x1="1300" y1="505" x2="1675" y2="570" stroke="#90ab91" stroke-width="4"/><polygon points="1675,570 1660.5774386452656,574.1218592854345 1662.806028797923,561.2646084047183" fill="#90ab91"/>
+<rect x="80" y="720" width="890" height="100" rx="17" fill="#edf5e8" stroke="#a8c3a5" stroke-width="2"/>
+<text x="525.0" y="761.5" font-family="Microsoft YaHei,sans-serif" text-anchor="middle" font-size="28" fill="#294e38">pgvector 检索 → LLM 重排</text>
+<text x="525.0" y="795.5" font-family="Microsoft YaHei,sans-serif" text-anchor="middle" font-size="25" fill="#294e38">只访问全局或本人文档 · 有界问题改写与一次补检索</text>
+<rect x="1230" y="720" width="890" height="100" rx="17" fill="#fff4da" stroke="#d7b576" stroke-width="2"/>
+<text x="1675.0" y="761.5" font-family="Microsoft YaHei,sans-serif" text-anchor="middle" font-size="28" fill="#294e38">持久化待确认方案</text>
+<text x="1675.0" y="795.5" font-family="Microsoft YaHei,sans-serif" text-anchor="middle" font-size="25" fill="#294e38">订单 / 修改内容 / 费用 / 版本 / 规则证据 / 300秒有效期</text>
+<line x1="525" y1="670" x2="525" y2="720" stroke="#90ab91" stroke-width="4"/><polygon points="525,720 518.4755169883315,706.4932934647098 531.5244830116685,706.4932934647098" fill="#90ab91"/>
+<line x1="1675" y1="670" x2="1675" y2="720" stroke="#90ab91" stroke-width="4"/><polygon points="1675,720 1668.4755169883315,706.4932934647098 1681.5244830116685,706.4932934647098" fill="#90ab91"/>
+<rect x="80" y="870" width="890" height="115" rx="17" fill="#edf5e8" stroke="#a8c3a5" stroke-width="2"/>
+<text x="525.0" y="901.5" font-family="Microsoft YaHei,sans-serif" text-anchor="middle" font-size="28" fill="#294e38">有依据：流式回答 + 真实引用</text>
+<text x="525.0" y="935.5" font-family="Microsoft YaHei,sans-serif" text-anchor="middle" font-size="25" fill="#294e38">文档标题、版本、原文、片段ID、重排分数</text>
+<text x="525.0" y="970.5" font-family="Microsoft YaHei,sans-serif" text-anchor="middle" font-size="25" fill="#294e38">无依据：明确提示资料不足</text>
+<rect x="1230" y="870" width="890" height="115" rx="17" fill="#fff4da" stroke="#d7b576" stroke-width="2"/>
+<text x="1675.0" y="919.0" font-family="Microsoft YaHei,sans-serif" text-anchor="middle" font-size="28" fill="#294e38">用户点击确认卡片</text>
+<text x="1675.0" y="953.0" font-family="Microsoft YaHei,sans-serif" text-anchor="middle" font-size="25" fill="#294e38">文字“确认”不执行 · 后端受保护确认接口</text>
+<line x1="525" y1="820" x2="525" y2="870" stroke="#90ab91" stroke-width="4"/><polygon points="525,870 518.4755169883315,856.4932934647098 531.5244830116685,856.4932934647098" fill="#90ab91"/>
+<line x1="1675" y1="820" x2="1675" y2="870" stroke="#90ab91" stroke-width="4"/><polygon points="1675,870 1668.4755169883315,856.4932934647098 1681.5244830116685,856.4932934647098" fill="#90ab91"/>
+<rect x="1230" y="1035" width="890" height="120" rx="17" fill="#fff4da" stroke="#d7b576" stroke-width="2"/>
+<text x="1675.0" y="1069.0" font-family="Microsoft YaHei,sans-serif" text-anchor="middle" font-size="28" fill="#294e38">事务内锁定方案和订单并重新校验</text>
+<text x="1675.0" y="1103.0" font-family="Microsoft YaHei,sans-serif" text-anchor="middle" font-size="25" fill="#294e38">归属 / 过期 / 订单版本 / 日期 / 舱位 / 费用</text>
+<text x="1675.0" y="1138.0" font-family="Microsoft YaHei,sans-serif" text-anchor="middle" font-size="25" fill="#294e38">重复确认返回原结果 · 不合规则回滚并记录失败</text>
+<line x1="1675" y1="985" x2="1675" y2="1035" stroke="#90ab91" stroke-width="4"/><polygon points="1675,1035 1668.4755169883315,1021.4932934647098 1681.5244830116685,1021.4932934647098" fill="#90ab91"/>
+<rect x="1230" y="1205" width="890" height="100" rx="17" fill="#edf5e8" stroke="#a8c3a5" stroke-width="2"/>
+<text x="1675.0" y="1246.5" font-family="Microsoft YaHei,sans-serif" text-anchor="middle" font-size="28" fill="#294e38">执行 → 同事务保存记录 → 直接SQL复核</text>
+<text x="1675.0" y="1280.5" font-family="Microsoft YaHei,sans-serif" text-anchor="middle" font-size="25" fill="#294e38">更新订单版本与方案状态 · 前端刷新订单和历史</text>
+<line x1="1675" y1="1155" x2="1675" y2="1205" stroke="#90ab91" stroke-width="4"/><polygon points="1675,1205 1668.4755169883315,1191.49329346471 1681.5244830116685,1191.49329346471" fill="#90ab91"/>
+<rect x="80" y="1060" width="890" height="245" rx="17" fill="#e8f1ed" stroke="#92b5a3" stroke-width="2"/>
+<text x="525.0" y="1139.0" font-family="Microsoft YaHei,sans-serif" text-anchor="middle" font-size="28" fill="#294e38">PostgreSQL 持久化</text>
+<text x="525.0" y="1173.0" font-family="Microsoft YaHei,sans-serif" text-anchor="middle" font-size="25" fill="#294e38">用户 / 订单 / 方案 / 聊天 / 文档 / 向量 / 操作记录</text>
+<text x="525.0" y="1208.0" font-family="Microsoft YaHei,sans-serif" text-anchor="middle" font-size="25" fill="#294e38">所有业务读写按登录用户隔离</text>
+<text x="525.0" y="1243.0" font-family="Microsoft YaHei,sans-serif" text-anchor="middle" font-size="25" fill="#294e38">重启不重置业务数据</text>
+<line x1="525" y1="985" x2="525" y2="1060" stroke="#90ab91" stroke-width="4"/><polygon points="525,1060 518.4755169883315,1046.49329346471 531.5244830116685,1046.49329346471" fill="#90ab91"/>
+<rect x="80" y="1380" width="2040" height="135" rx="17" fill="#e8f1ed" stroke="#92b5a3" stroke-width="2"/>
+<text x="1100.0" y="1421.5" font-family="Microsoft YaHei,sans-serif" text-anchor="middle" font-size="28" fill="#294e38">贯穿全程的持久化追踪与验证</text>
+<text x="1100.0" y="1455.5" font-family="Microsoft YaHei,sans-serif" text-anchor="middle" font-size="25" fill="#294e38">检索问题和原文 · 重排分数 · 模型与工具 · 实际服务商Token · 首字/总耗时 · 成功和失败</text>
+<text x="1100.0" y="1490.5" font-family="Microsoft YaHei,sans-serif" text-anchor="middle" font-size="25" fill="#294e38">真实 PostgreSQL 事务与并发测试 + 固定100评测场景 + 页面真实DeepSeek验证</text>
+<line x1="525" y1="1305" x2="525" y2="1380" stroke="#90ab91" stroke-width="4"/><polygon points="525,1380 518.4755169883315,1366.49329346471 531.5244830116685,1366.49329346471" fill="#90ab91"/>
+<line x1="1675" y1="1305" x2="1675" y2="1380" stroke="#90ab91" stroke-width="4"/><polygon points="1675,1380 1668.4755169883315,1366.49329346471 1681.5244830116685,1366.49329346471" fill="#90ab91"/>
+<text x="100" y="1598" font-family="Microsoft YaHei,sans-serif" text-anchor="start" font-size="23" fill="#899782">仅演示订单，无真实扣费。未实现 MCP、Skills、多 Agent 或外部追踪平台。</text>
+</svg>

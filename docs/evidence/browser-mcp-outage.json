@@ -1,0 +1,26 @@
+{
+  "requestId": "2d4dec60-e9b4-43a1-a36a-4c328155f989",
+  "trace": [
+    "FAILED",
+    "MCP服务不可用：初始化或工具发现失败，请检查本机MCP服务后重试；本次没有执行订单操作",
+    356,
+    28
+  ],
+  "budgetToolsRetrievalsModels": [
+    0,
+    0,
+    1
+  ],
+  "events": [
+    "BUDGET_START",
+    "AGENT_START",
+    "MODEL",
+    "AGENT_ROUTE",
+    "AGENT_START",
+    "MCP_ERROR",
+    "AGENT_END",
+    "AGENT_END",
+    "BUDGET_END"
+  ],
+  "usedLocalFallback": false
+}

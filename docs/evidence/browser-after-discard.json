@@ -1,0 +1,260 @@
+{
+  "stage": "after-discard",
+  "recordedAt": "2026-11-24T12:28:05.936876+00:00",
+  "flight_orders": {
+    "count": 8,
+    "sha256": "da2735a6894e2fa904dd907d7e3cf7043da0fd08cb71e10c02ac6f6637c3fd6b",
+    "rows": [
+      {
+        "id": "A1001",
+        "user_id": 1,
+        "flight_date": "2026-12-09",
+        "origin": "南京 NKG",
+        "destination": "北京 PEK",
+        "cabin": "ECONOMY",
+        "status": "CANCELLED",
+        "fare": 1000.0,
+        "version": 1
+      },
+      {
+        "id": "A1002",
+        "user_id": 1,
+        "flight_date": "2026-12-10",
+        "origin": "南京 NKG",
+        "destination": "上海 SHA",
+        "cabin": "ECONOMY",
+        "status": "CONFIRMED",
+        "fare": 1000.0,
+        "version": 0
+      },
+      {
+        "id": "A1003",
+        "user_id": 1,
+        "flight_date": "2026-12-11",
+        "origin": "南京 NKG",
+        "destination": "北京 PEK",
+        "cabin": "ECONOMY",
+        "status": "CONFIRMED",
+        "fare": 1000.0,
+        "version": 0
+      },
+      {
+        "id": "A1004",
+        "user_id": 1,
+        "flight_date": "2026-12-12",
+        "origin": "南京 NKG",
+        "destination": "上海 SHA",
+        "cabin": "BUSINESS",
+        "status": "CONFIRMED",
+        "fare": 1500.0,
+        "version": 0
+      },
+      {
+        "id": "B1001",
+        "user_id": 2,
+        "flight_date": "2026-12-09",
+        "origin": "南京 NKG",
+        "destination": "北京 PEK",
+        "cabin": "ECONOMY",
+        "status": "CONFIRMED",
+        "fare": 1000.0,
+        "version": 0
+      },
+      {
+        "id": "B1002",
+        "user_id": 2,
+        "flight_date": "2026-12-10",
+        "origin": "南京 NKG",
+        "destination": "上海 SHA",
+        "cabin": "ECONOMY",
+        "status": "CONFIRMED",
+        "fare": 1000.0,
+        "version": 0
+      },
+      {
+        "id": "B1003",
+        "user_id": 2,
+        "flight_date": "2026-12-11",
+        "origin": "南京 NKG",
+        "destination": "北京 PEK",
+        "cabin": "ECONOMY",
+        "status": "CONFIRMED",
+        "fare": 1000.0,
+        "version": 0
+      },
+      {
+        "id": "B1004",
+        "user_id": 2,
+        "flight_date": "2026-12-12",
+        "origin": "南京 NKG",
+        "destination": "上海 SHA",
+        "cabin": "BUSINESS",
+        "status": "CONFIRMED",
+        "fare": 1500.0,
+        "version": 0
+      }
+    ]
+  },
+  "operation_plans": {
+    "count": 4,
+    "sha256": "c7a665f5dbfd29c23204c1443bb755a30148cf593bfdd941eec7c0e033f5d6ad",
+    "rows": [
+      {
+        "id": "636c2b7f-527a-4886-af31-8307bbdee250",
+        "user_id": 1,
+        "order_id": "A1002",
+        "order_version": 0,
+        "action": "CANCEL",
+        "new_date": null,
+        "new_cabin": null,
+        "fee": 200.0,
+        "refund": 800.0,
+        "expires_at": "2026-11-24T12:32:52.135279+00:00",
+        "created_at": "2026-11-24T12:27:52.135279+00:00",
+        "status": "PENDING",
+        "rule_version": "demo-v1.0",
+        "evidence": "[{\"chunkId\":\"9043306c-5844-46bd-9bae-a7688733ab4b\",\"documentId\":\"0dac457a-b67f-4c36-ab1b-1921c7855504\",\"title\":\"演示退票服务条款\",\"version\":\"demo-v1.0\",\"excerpt\":\"# 演示退票服务条款\\n版本：demo-v1.0。仅用于本项目演示，不适用于任何真实航空公司，不产生真实收费。\\n\\n## 退票时间与状态\\n只有状态为 CONFIRMED 的订单可以申请取消。以北京时间 Asia/Shanghai 的航班日期当天12:00作为演示起飞时间；距离起飞至少48小时才允许退票，少于48小时拒绝。已取消订单不能再次退票。\\n\\n## 退票手续费与退款\\n经济舱 ECONOMY 取消手续费为订单票价的20%；商务舱 BUSINESS 为票价的10%。费用按人民币元计算，四舍五入保留两位小数。退款金额等于票价减去手续费。例如经济舱票价1000元，手续费200元，退款800元；商务舱票价1500元，手续费150元，退款1350元。\\n\\n## 确认与安全\\n聊天只生成待确认方案，订单数据库保持不变。方案有效期默认300秒；必须由订单所属的登录用户在页面点击确认，后端重查归属、有效期、订单版本与业务规则后才执行。重复确认只返回原\",\"similarity\":0.7275726795196585,\"rerank\":1.0,\"authoritative\":true}]",
+        "executed_at": null,
+        "result_version": null
+      },
+      {
+        "id": "97710a93-3601-4fcc-961d-226728e898ed",
+        "user_id": 2,
+        "order_id": "B1004",
+        "order_version": 0,
+        "action": "CANCEL",
+        "new_date": null,
+        "new_cabin": null,
+        "fee": 150.0,
+        "refund": 1350.0,
+        "expires_at": "2026-11-24T11:54:51.355304+00:00",
+        "created_at": "2026-11-24T11:49:51.355304+00:00",
+        "status": "PENDING",
+        "rule_version": "demo-v1.0",
+        "evidence": "[{\"chunkId\":\"9043306c-5844-46bd-9bae-a7688733ab4b\",\"documentId\":\"0dac457a-b67f-4c36-ab1b-1921c7855504\",\"title\":\"演示退票服务条款\",\"version\":\"demo-v1.0\",\"excerpt\":\"# 演示退票服务条款\\n版本：demo-v1.0。仅用于本项目演示，不适用于任何真实航空公司，不产生真实收费。\\n\\n## 退票时间与状态\\n只有状态为 CONFIRMED 的订单可以申请取消。以北京时间 Asia/Shanghai 的航班日期当天12:00作为演示起飞时间；距离起飞至少48小时才允许退票，少于48小时拒绝。已取消订单不能再次退票。\\n\\n## 退票手续费与退款\\n经济舱 ECONOMY 取消手续费为订单票价的20%；商务舱 BUSINESS 为票价的10%。费用按人民币元计算，四舍五入保留两位小数。退款金额等于票价减去手续费。例如经济舱票价1000元，手续费200元，退款800元；商务舱票价1500元，手续费150元，退款1350元。\\n\\n## 确认与安全\\n聊天只生成待确认方案，订单数据库保持不变。方案有效期默认300秒；必须由订单所属的登录用户在页面点击确认，后端重查归属、有效期、订单版本与业务规则后才执行。重复确认只返回原\",\"similarity\":0.7082739646271501,\"rerank\":1.0,\"authoritative\":true}]",
+        "executed_at": null,
+        "result_version": null
+      },
+      {
+        "id": "cb8fa116-fc48-48f8-8e08-4ff8a606565a",
+        "user_id": 1,
+        "order_id": "A1001",
+        "order_version": 0,
+        "action": "CANCEL",
+        "new_date": null,
+        "new_cabin": null,
+        "fee": 200.0,
+        "refund": 800.0,
+        "expires_at": "2026-11-24T12:31:12.181802+00:00",
+        "created_at": "2026-11-24T12:26:12.181802+00:00",
+        "status": "EXECUTED",
+        "rule_version": "demo-v1.0",
+        "evidence": "[{\"chunkId\":\"9043306c-5844-46bd-9bae-a7688733ab4b\",\"documentId\":\"0dac457a-b67f-4c36-ab1b-1921c7855504\",\"title\":\"演示退票服务条款\",\"version\":\"demo-v1.0\",\"excerpt\":\"# 演示退票服务条款\\n版本：demo-v1.0。仅用于本项目演示，不适用于任何真实航空公司，不产生真实收费。\\n\\n## 退票时间与状态\\n只有状态为 CONFIRMED 的订单可以申请取消。以北京时间 Asia/Shanghai 的航班日期当天12:00作为演示起飞时间；距离起飞至少48小时才允许退票，少于48小时拒绝。已取消订单不能再次退票。\\n\\n## 退票手续费与退款\\n经济舱 ECONOMY 取消手续费为订单票价的20%；商务舱 BUSINESS 为票价的10%。费用按人民币元计算，四舍五入保留两位小数。退款金额等于票价减去手续费。例如经济舱票价1000元，手续费200元，退款800元；商务舱票价1500元，手续费150元，退款1350元。\\n\\n## 确认与安全\\n聊天只生成待确认方案，订单数据库保持不变。方案有效期默认300秒；必须由订单所属的登录用户在页面点击确认，后端重查归属、有效期、订单版本与业务规则后才执行。重复确认只返回原\",\"similarity\":0.7275726795196585,\"rerank\":1.0,\"authoritative\":true}]",
+        "executed_at": "2026-11-24T12:27:21.113418+00:00",
+        "result_version": 1
+      },
+      {
+        "id": "eed74a43-9813-4b9e-99c2-86756c25357c",
+        "user_id": 1,
+        "order_id": "A1001",
+        "order_version": 0,
+        "action": "CANCEL",
+        "new_date": null,
+        "new_cabin": null,
+        "fee": 200.0,
+        "refund": 800.0,
+        "expires_at": "2026-11-24T12:30:30.463621+00:00",
+        "created_at": "2026-11-24T12:25:30.463621+00:00",
+        "status": "DISCARDED",
+        "rule_version": "demo-v1.0",
+        "evidence": "[{\"chunkId\":\"9043306c-5844-46bd-9bae-a7688733ab4b\",\"documentId\":\"0dac457a-b67f-4c36-ab1b-1921c7855504\",\"title\":\"演示退票服务条款\",\"version\":\"demo-v1.0\",\"excerpt\":\"# 演示退票服务条款\\n版本：demo-v1.0。仅用于本项目演示，不适用于任何真实航空公司，不产生真实收费。\\n\\n## 退票时间与状态\\n只有状态为 CONFIRMED 的订单可以申请取消。以北京时间 Asia/Shanghai 的航班日期当天12:00作为演示起飞时间；距离起飞至少48小时才允许退票，少于48小时拒绝。已取消订单不能再次退票。\\n\\n## 退票手续费与退款\\n经济舱 ECONOMY 取消手续费为订单票价的20%；商务舱 BUSINESS 为票价的10%。费用按人民币元计算，四舍五入保留两位小数。退款金额等于票价减去手续费。例如经济舱票价1000元，手续费200元，退款800元；商务舱票价1500元，手续费150元，退款1350元。\\n\\n## 确认与安全\\n聊天只生成待确认方案，订单数据库保持不变。方案有效期默认300秒；必须由订单所属的登录用户在页面点击确认，后端重查归属、有效期、订单版本与业务规则后才执行。重复确认只返回原\",\"similarity\":0.7070382165244443,\"rerank\":1.0,\"authoritative\":true}]",
+        "executed_at": null,
+        "result_version": null
+      }
+    ]
+  },
+  "operation_records": {
+    "count": 6,
+    "sha256": "5d776683e6c5451736c70d7896a3b2a4dfc2e67781dd61a4ed51f46e04978408",
+    "rows": [
+      {
+        "id": "1b5ae907-91f0-4921-ae2d-b183b59d4152",
+        "user_id": 1,
+        "plan_id": "eed74a43-9813-4b9e-99c2-86756c25357c",
+        "order_id": "A1001",
+        "action": "PREPARE",
+        "outcome": "SUCCESS",
+        "reason": "方案已生成，订单尚未变化",
+        "request_id": "2d17fc6d-39a3-4aaf-a3ea-3c4303b9287d",
+        "created_at": "2026-11-24T12:25:30.517482+00:00"
+      },
+      {
+        "id": "37bafbfb-39b6-4a70-93bc-7f9211bd98fe",
+        "user_id": 2,
+        "plan_id": "97710a93-3601-4fcc-961d-226728e898ed",
+        "order_id": "B1004",
+        "action": "PREPARE",
+        "outcome": "SUCCESS",
+        "reason": "方案已生成，订单尚未变化",
+        "request_id": "24c4d435-1443-4728-840e-f1573526cb19",
+        "created_at": "2026-11-24T11:49:51.390604+00:00"
+      },
+      {
+        "id": "a32122f6-4e65-47c2-ae35-7721dc349e6c",
+        "user_id": 1,
+        "plan_id": "cb8fa116-fc48-48f8-8e08-4ff8a606565a",
+        "order_id": "A1001",
+        "action": "PREPARE",
+        "outcome": "SUCCESS",
+        "reason": "方案已生成，订单尚未变化",
+        "request_id": "d9f08dad-b8a1-4d0e-8ed8-65ae3870377a",
+        "created_at": "2026-11-24T12:26:12.184324+00:00"
+      },
+      {
+        "id": "b3d8a740-a3e5-4b3c-a842-b65b859339a2",
+        "user_id": 1,
+        "plan_id": "cb8fa116-fc48-48f8-8e08-4ff8a606565a",
+        "order_id": "A1001",
+        "action": "CONFIRM",
+        "outcome": "SUCCESS",
+        "reason": "数据库已更新；演示操作，不产生真实扣费",
+        "request_id": "1c681c65-a753-4cee-9037-126d83f2a9d7",
+        "created_at": "2026-11-24T12:27:21.11493+00:00"
+      },
+      {
+        "id": "ecefeb68-8f7b-444f-931a-c7902fae78d3",
+        "user_id": 1,
+        "plan_id": "eed74a43-9813-4b9e-99c2-86756c25357c",
+        "order_id": "A1001",
+        "action": "DISCARD",
+        "outcome": "SUCCESS",
+        "reason": "已丢弃待确认方案，订单未修改",
+        "request_id": "e33523ee-de7a-4dd4-a1f3-758f934de144",
+        "created_at": "2026-11-24T12:27:46.364461+00:00"
+      },
+      {
+        "id": "feedbc96-f003-476a-a79f-71c9c608a7c3",
+        "user_id": 1,
+        "plan_id": "636c2b7f-527a-4886-af31-8307bbdee250",
+        "order_id": "A1002",
+        "action": "PREPARE",
+        "outcome": "SUCCESS",
+        "reason": "方案已生成，订单尚未变化",
+        "request_id": "3106fdf6-9a04-414e-937f-acb235d341d2",
+        "created_at": "2026-11-24T12:27:52.137284+00:00"
+      }
+    ]
+  },
+  "knowledge_documents": {
+    "count": 3,
+    "sha256": "83654c64e523c338b419f70da8c8c4a53b7ded2aec57460c0cce9020a9ad1018"
+  },
+  "conversations": {
+    "count": 148,
+    "sha256": "1e73d21be82ff144d3e277f7d71be28ae72aa98d532a9467ef81d9e84a004f20"
+  },
+  "chat_messages": {
+    "count": 329,
+    "sha256": "0daef9669aacf7ed9a1f3f984a6b4829daea6e3851c4787efec0480dc8395e47"
+  }
+}

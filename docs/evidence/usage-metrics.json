@@ -1,0 +1,163 @@
+{
+  "reports": {
+    "delivery-focused-v2.json": {
+      "executed": 14,
+      "passed": 14,
+      "failed": 0,
+      "buildSha256": "b03ff41d87260a173754e9243dd1ef61b502402a21583c0cbb9fa680f9bf0e2b",
+      "providerCalls": 67,
+      "providerInputTokens": "57859",
+      "providerOutputTokens": "7262",
+      "chatCount": 14,
+      "medianFirstMs": 3507.0,
+      "medianTotalMs": 4307.5,
+      "failures": []
+    },
+    "final-route-recheck-v2.json": {
+      "executed": 2,
+      "passed": 2,
+      "failed": 0,
+      "buildSha256": "b7d10f5c873c2e1380fca4df720756591c66dadcb83453bce53f797df1eafa20",
+      "providerCalls": 12,
+      "providerInputTokens": "8055",
+      "providerOutputTokens": "834",
+      "chatCount": 3,
+      "medianFirstMs": 3803.0,
+      "medianTotalMs": 4536.0,
+      "failures": []
+    },
+    "focused-v2.json": {
+      "executed": 10,
+      "passed": 10,
+      "failed": 0,
+      "buildSha256": "7b1d7e1e5de161cd9b6922b916e0c87a643d336236da0340d7894405093b90f5",
+      "providerCalls": 59,
+      "providerInputTokens": "64285",
+      "providerOutputTokens": "8252",
+      "chatCount": 10,
+      "medianFirstMs": 6938.0,
+      "medianTotalMs": 8504.5,
+      "failures": []
+    },
+    "frozen-focused-v2.json": {
+      "executed": 5,
+      "passed": 5,
+      "failed": 0,
+      "buildSha256": "b6660efad7688eb4c39452e536109d6db4be1c59f6fad31ebeba6c3eced05247",
+      "providerCalls": 27,
+      "providerInputTokens": "25458",
+      "providerOutputTokens": "3010",
+      "chatCount": 5,
+      "medianFirstMs": 4108.0,
+      "medianTotalMs": 5193.0,
+      "failures": []
+    },
+    "full-v2.json": {
+      "executed": 150,
+      "passed": 148,
+      "failed": 2,
+      "buildSha256": "b6660efad7688eb4c39452e536109d6db4be1c59f6fad31ebeba6c3eced05247",
+      "providerCalls": 457,
+      "providerInputTokens": "379132",
+      "providerOutputTokens": "47097",
+      "chatCount": 89,
+      "medianFirstMs": 3829.0,
+      "medianTotalMs": 4717.0,
+      "failures": [
+        {
+          "id": "K05",
+          "failure": "Knowledge-only question invoked unnecessary order Agent",
+          "requestIds": [
+            "f2e90dca-5be8-4733-b232-71063b97569a",
+            "fa6f9528-6b17-48fd-9fac-de167b2a2f68"
+          ]
+        },
+        {
+          "id": "M08",
+          "failure": "Knowledge-only question invoked unnecessary order Agent",
+          "requestIds": [
+            "0fa1e292-6e8f-418b-a5fe-5c55f2d893cd",
+            "49ce04a6-13ec-4aff-9103-f2510febd590"
+          ]
+        }
+      ]
+    },
+    "sample-v2.json": {
+      "executed": 26,
+      "passed": 22,
+      "failed": 4,
+      "buildSha256": "0afd6c6fb5dd6d60a402bd4677641ebd1835a8494b256b62841bfe203b54ef34",
+      "providerCalls": 160,
+      "providerInputTokens": "140161",
+      "providerOutputTokens": "21306",
+      "chatCount": 29,
+      "medianFirstMs": 4814.0,
+      "medianTotalMs": 5709.0,
+      "failures": [
+        {
+          "id": "N01",
+          "failure": "[{'message': '请求总预算已耗尽: retrievals', 'requestId': 'df9dd23d-983d-49c6-be10-2203751f7b8d'}]",
+          "requestIds": [
+            "f271d31f-e532-4106-9559-cda2fccac9b6",
+            "df9dd23d-983d-49c6-be10-2203751f7b8d"
+          ]
+        },
+        {
+          "id": "N03",
+          "failure": "[{'message': '请求总预算已耗尽: retrievals', 'requestId': '2a167360-a1fa-4da7-ba96-8d8607951b98'}]",
+          "requestIds": [
+            "3348238d-e2be-479b-92ad-00cbb9be57c1",
+            "2a167360-a1fa-4da7-ba96-8d8607951b98"
+          ]
+        },
+        {
+          "id": "P01",
+          "failure": "Expected pending proposal",
+          "requestIds": [
+            "00783e59-d30a-401f-8f2d-2cc0895057e4",
+            "2fa3e462-46ad-477a-8188-e6c2b4524268"
+          ]
+        },
+        {
+          "id": "P03",
+          "failure": "Expected pending proposal",
+          "requestIds": [
+            "3a45f587-8b2d-472a-a457-6540c13b1411",
+            "4d466eb0-87b2-4782-8834-043d21a6ced5"
+          ]
+        }
+      ]
+    },
+    "security-live-v2.json": {
+      "executed": 25,
+      "passed": 25,
+      "failed": 0,
+      "buildSha256": "7b1d7e1e5de161cd9b6922b916e0c87a643d336236da0340d7894405093b90f5",
+      "providerCalls": 0,
+      "providerInputTokens": "0",
+      "providerOutputTokens": "0",
+      "chatCount": 0,
+      "medianFirstMs": null,
+      "medianTotalMs": null,
+      "failures": []
+    },
+    "smoke-v2.json": {
+      "executed": 5,
+      "passed": 5,
+      "failed": 0,
+      "buildSha256": null,
+      "providerCalls": 25,
+      "providerInputTokens": "21197",
+      "providerOutputTokens": "3000",
+      "chatCount": 5,
+      "medianFirstMs": 4307.0,
+      "medianTotalMs": 5224.0,
+      "failures": []
+    }
+  },
+  "databaseTotalProviderCalls": 856,
+  "databaseTotalInputTokens": "747481",
+  "databaseTotalOutputTokens": "97237",
+  "currencyCost": null,
+  "currencyNote": "服务商实际返回usage；未读账单，未估算或声称货币扣款。数据库总量包含页面联调与所有评测，报告不能重复累加副本。"
+}

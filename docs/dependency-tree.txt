@@ -1,0 +1,18 @@
+org.vaadin.marcus:java-ai-playground-v2:jar:2.0-SNAPSHOT
++- io.modelcontextprotocol.sdk:mcp:jar:0.14.1:compile
+|  +- io.modelcontextprotocol.sdk:mcp-json-jackson2:jar:0.14.1:compile
+|  |  \- io.modelcontextprotocol.sdk:mcp-json:jar:0.14.1:compile
+|  \- io.modelcontextprotocol.sdk:mcp-core:jar:0.14.1:compile
+|     \- io.projectreactor:reactor-core:jar:3.7.0:compile
++- com.networknt:json-schema-validator:jar:1.5.6:compile
+|  \- com.fasterxml.jackson.core:jackson-databind:jar:2.17.2:compile
++- com.vaadin:vaadin-spring-boot-starter:jar:24.4.11:compile
+|  \- org.springframework.boot:spring-boot-starter-web:jar:3.3.3:compile
+|     \- org.springframework.boot:spring-boot-starter-tomcat:jar:3.3.3:compile
+|        \- org.apache.tomcat.embed:tomcat-embed-core:jar:10.1.28:compile
++- dev.langchain4j:langchain4j:jar:1.24.0:compile
+|  \- dev.langchain4j:langchain4j-core:jar:1.24.0:compile
+\- dev.langchain4j:langchain4j-open-ai:jar:1.24.0:compile
+   +- dev.langchain4j:langchain4j-http-client:jar:1.24.0:compile
+   +- dev.langchain4j:langchain4j-reactive-streaming:jar:1.24.0-beta34:compile
+   \- dev.langchain4j:langchain4j-http-client-jdk:jar:1.24.0:runtime

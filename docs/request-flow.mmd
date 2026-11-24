@@ -1,0 +1,20 @@
+sequenceDiagram
+ participant U as 登录用户
+ participant API as 8082后端
+ participant C as 协调Agent
+ participant S as 专业Agent+Skill
+ participant M as 独立MCP18084
+ participant DB as V2数据库
+ U->>API: POST /api/chat + Session + CSRF
+ API->>DB: 请求ID、所属用户、总预算
+ API->>C: 当前用户会话历史
+ C->>C: DeepSeek路由/改写，无工具
+ C->>S: 至多2次独立角色委派
+ S->>M: 真实initialize / tools/list
+ M->>DB: 验证签名上下文与运行记录
+ S->>M: tools/call，Skill白名单
+ M->>DB: 原子扣总预算、查归属、检索/生成方案
+ M-->>S: 真实结果/证据/费用，订单未执行
+ S-->>C: 保留来源和版本的结果
+ C-->>U: 流式回答+引用+PENDING卡片
+ API->>DB: 实际usage、耗时、Agent父子/MCP追踪

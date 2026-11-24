@@ -1,0 +1,172 @@
+{
+  "runId": "61911c20-8dc3-4d52-aebe-74313052137b",
+  "mode": "sample",
+  "model": "deepseek-flash",
+  "rerank": "DeepSeek LLM",
+  "embedding": "bge-small-zh-v1.5 int8 CPU",
+  "config": {
+    "chunkSize": 420,
+    "overlap": 80,
+    "candidates": 8,
+    "topK": 4,
+    "minSimilarity": 0.5,
+    "retryMinSimilarity": 0.4,
+    "rerankThreshold": 0.6,
+    "maxRetrievals": 2
+  },
+  "executed": 5,
+  "totalSelected": 5,
+  "passed": 5,
+  "failed": 0,
+  "fixtureOrderIds": [
+    "EV39C68A128BA2",
+    "EV2D5171123C44",
+    "EV92BD09F4898F"
+  ],
+  "results": [
+    {
+      "id": "K01",
+      "category": "knowledge",
+      "question": "经济舱票价1000元，退票手续费和退款各是多少？",
+      "status": "PASS",
+      "requestIds": [
+        "f3781a6b-742d-4a92-970f-3a127cc86f10",
+        "ac720c30-bd4d-407c-83a6-4f3931860945"
+      ],
+      "answer": "按演示退票服务条款计算：\n\n- **退票手续费**：1000 × 20% = **200.00 元**\n- **退款金额**：1000 − 200 = **800.00 元**\n\n依据：经济舱取消手续费为订单票价的20%，退款金额等于票价减去手续费[1]。\n\n**适用前提**[1]：\n1. 只有状态为 **CONFIRMED** 的订单可以申请取消；已取消订单不能再次退票。\n2. 以北京时间航班日期当天12:00作为演示起飞时间，距离起飞**至少48小时**才允许退票，少于48小时会被拒绝。\n3. 以上为规则层面的计算示例，实际费用以后端针对具体订单的算费结果为准。\n\n**当前状态说明**：本次仅查询了条款并给出计算，**尚未生成待确认退票方案，也未修改任何订单**。如需针对具体订单办理，请提供订单编号；方案生成后需由你在页面确认卡片上点击确认才会提交，聊天中的文字确认不生效。\n\n以上金额均为演示数据，不产生真实收费[1]。",
+      "sourceTitles": [
+        "演示退票服务条款"
+      ],
+      "fixtureOrderIds": [],
+      "verifiedDatabase": [],
+      "providerInputTokens": 4468,
+      "providerOutputTokens": 617,
+      "elapsedMs": 7750
+    },
+    {
+      "id": "M01",
+      "category": "multiturn",
+      "question": "经济舱退票费率是多少？",
+      "status": "PASS",
+      "requestIds": [
+        "968803f8-4134-4720-a70a-a88a02f3ee7b",
+        "b183b429-56a1-4a7a-b9f4-34f91197256d",
+        "1cddbcac-d11a-4419-8025-b701700960bc"
+      ],
+      "answer": "根据《演示退票服务条款》（版本 demo-v1.0），商务舱（BUSINESS）退票手续费为**订单票价的 10%**，费用按人民币元计算，四舍五入保留两位小数；退款金额 = 票价 − 手续费。例如商务舱票价 1500 元，手续费 150 元，退款 1350 元[1]。\n\n同一份条款中的其他规则同样适用[1]：\n- 只有状态为 CONFIRMED 的订单可以申请取消，已取消订单不能再次退票；\n- 以北京时间航班日期当天 12:00 作为演示起飞时间，距离起飞至少 48 小时才允许退票，少于 48 小时会被拒绝。\n\n需要说明：该文档标注为演示条款，仅用于本项目演示，不适用于任何真实航空公司，也不产生真实收费[1]。\n\n本次仅查询了条款并说明费率，**未生成退票方案，也未修改任何订单**。如需办理具体退票，请以页面确认流程为准。",
+      "sourceTitles": [
+        "演示退票服务条款"
+      ],
+      "fixtureOrderIds": [],
+      "verifiedDatabase": [],
+      "providerInputTokens": 7911,
+      "providerOutputTokens": 1094,
+      "elapsedMs": 10156
+    },
+    {
+      "id": "O01",
+      "category": "order",
+      "question": "查询订单 {order}",
+      "status": "PASS",
+      "requestIds": [
+        "fc17aad4-7fdf-4cfc-8468-2438e1ce085f",
+        "cb714c6f-6ff4-4dc6-8dd1-5a8a6624c62b"
+      ],
+      "answer": "已为您查询订单 EV39C68A128BA2，结果如下：\n\n| 项目 | 内容 |\n|---|---|\n| 订单号 | EV39C68A128BA2 |\n| 航班日期 | 2026-12-24 |\n| 航程 | 南京 NKG → 北京 PEK |\n| 舱位 | 经济舱（ECONOMY） |\n| 状态 | 已确认（CONFIRMED） |\n| 票价 | ¥1000.00（演示金额） |\n\n说明：\n- 本次仅完成订单查询，未进行任何退票、改签或其他变更操作，订单保持原状。\n- 如需退票或改签，请告知具体需求；改签需提供目标日期和舱位。方案准备后，实际变更需您在前端确认卡片上点击确认，聊天中的文字确认无效。\n- 本次没有可引用的政策依据，相关退改规则资料不足，建议以页面展示或航司规则为准。",
+      "fixtureOrderIds": [
+        "EV39C68A128BA2"
+      ],
+      "verifiedDatabase": [
+        {
+          "orderId": "EV39C68A128BA2",
+          "state": [
+            "CONFIRMED",
+            "0",
+            "2026-12-24",
+            "ECONOMY",
+            "1000.00"
+          ],
+          "plans": [],
+          "auditOutcomes": []
+        }
+      ],
+      "providerInputTokens": 1992,
+      "providerOutputTokens": 426,
+      "elapsedMs": 4141
+    },
+    {
+      "id": "P01",
+      "category": "proposal",
+      "question": "帮我取消订单 {order}",
+      "status": "PASS",
+      "requestIds": [
+        "b86815b6-416f-4dc8-8acb-7c9a48e6113f",
+        "2761085d-ad3b-4e6d-8174-48bf41c084fe"
+      ],
+      "answer": "已查询订单并生成退票方案，但**订单尚未取消，仍为 CONFIRMED**。聊天中无法执行取消，文字确认也无效。\n\n**订单信息**\n- 订单号：EV2D5171123C44\n- 航班：南京 NKG → 北京 PEK，2026-12-24，经济舱\n- 当前状态：CONFIRMED（订单版本 0）\n\n**已准备的退票方案（待确认，PENDING）**\n| 项目 | 内容 |\n|---|---|\n| 手续费 | ¥200.00（经济舱票价的 20%） |\n| 退款金额 | ¥800.00（票价 ¥1000.00 − 手续费 ¥200.00） |\n| 规则版本 | demo-v1.0（演示退票服务条款） |\n| 方案有效期 | 至 2026-11-24 11:46:40（北京时间） |\n\n**规则依据**：只有 CONFIRMED 订单可申请取消；以航班日当天 12:00 为演示起飞时间，距起飞至少 48 小时才允许退票，本单符合条件[1]。费用由后端计算，无法人工修改。\n\n**下一步**：请在页面上的方案卡片中点击确认提交。确认时后端会重新校验订单归属、方案有效期、订单版本与业务规则，通过后才会真正取消订单。若方案已过期，可告诉我，我重新生成。\n\n以上金额均为演示数据，不产生真实收费。",
+      "fixtureOrderIds": [
+        "EV2D5171123C44"
+      ],
+      "verifiedDatabase": [
+        {
+          "orderId": "EV2D5171123C44",
+          "state": [
+            "CONFIRMED",
+            "0",
+            "2026-12-24",
+            "ECONOMY",
+            "1000.00"
+          ],
+          "plans": [
+            [
+              "cb19e283-6ef8-4a3e-a899-b003918c2324",
+              "PENDING",
+              "200.00",
+              "800.00",
+              "None"
+            ]
+          ],
+          "auditOutcomes": [
+            [
+              "PREPARE",
+              "SUCCESS",
+              1
+            ]
+          ]
+        }
+      ],
+      "providerInputTokens": 6826,
+      "providerOutputTokens": 863,
+      "elapsedMs": 9203
+    },
+    {
+      "id": "U01",
+      "category": "unauthorized",
+      "question": null,
+      "status": "PASS",
+      "requestIds": [
+        "6c03e6cc-646c-47b4-9731-989827c95904"
+      ],
+      "fixtureOrderIds": [
+        "EV92BD09F4898F"
+      ],
+      "verifiedDatabase": [
+        {
+          "orderId": "EV92BD09F4898F",
+          "state": [
+            "CONFIRMED",
+            "0",
+            "2026-12-24",
+            "ECONOMY",
+            "1000.00"
+          ],
+          "plans": [],
+          "auditOutcomes": []
+        }
+      ],
+      "providerInputTokens": 0,
+      "providerOutputTokens": 0,
+      "elapsedMs": 47
+    }
+  ]
+}

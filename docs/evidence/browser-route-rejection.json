@@ -1,0 +1,13 @@
+{
+  "requestId": "85af6b3c-b8e6-4ffe-b103-47943b05baa8",
+  "status": "FAILED",
+  "reason": "协调Agent重复委派被拒绝",
+  "budgetDelegationsToolsRetrievalsModels": [
+    0,
+    0,
+    0,
+    1
+  ],
+  "completedOrderQuery": false,
+  "followupMcpOwnershipQueryRequestPrefix": "5e92a7b3"
+}

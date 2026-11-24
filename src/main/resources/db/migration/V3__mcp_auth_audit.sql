@@ -1,0 +1,4 @@
+CREATE TABLE mcp_auth_events (
+ id BIGSERIAL PRIMARY KEY, valid BOOLEAN NOT NULL, reason VARCHAR(160) NOT NULL,
+ created_at TIMESTAMPTZ NOT NULL DEFAULT now()
+);

@@ -1,0 +1,16 @@
+flowchart TD
+ P[待确认PENDING方案 / 聊天不能执行] --> CLICK{所属用户点击}
+ CLICK -->|确认| AUTH[Session + CSRF + 归属]
+ AUTH --> LOCK[同事务锁方案，再锁订单]
+ LOCK --> CHECK[重查过期、版本、状态、日期、舱位、规则、费用]
+ CHECK -->|无效| FAIL[409 / 事务回滚 / 失败记录]
+ CHECK -->|有效| UPDATE[订单更新 + EXECUTED + SUCCESS审计]
+ UPDATE --> SQL[读取真实SQL行核对所有业务字段]
+ SQL -->|不一致| FAIL
+ SQL -->|一致| COMMIT[提交事务 / 返回原执行回执]
+ COMMIT --> REPLAY[重复确认返回相同结果，不重复执行]
+ CLICK -->|丢弃| DISCARD[Session + CSRF + 归属 / 锁同一方案]
+ DISCARD --> D{方案状态}
+ D -->|PENDING 包括过期与旧版本| SAVE[DISCARDED + 审计 / 订单不变]
+ D -->|EXECUTED| REJECT[拒绝丢弃]
+ D -->|DISCARDED| SAME[幂等返回原状态]

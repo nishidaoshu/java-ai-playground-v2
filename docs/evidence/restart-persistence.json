@@ -1,0 +1,11 @@
+{
+  "equal": true,
+  "tables": {
+    "flight_orders": true,
+    "operation_plans": true,
+    "operation_records": true,
+    "knowledge_documents": true,
+    "conversations": true,
+    "chat_messages": true
+  }
+}

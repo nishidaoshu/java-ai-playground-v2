@@ -1,0 +1,7 @@
+{
+  "interactiveApiWithAnonymousCsrfAndMcpCredential": {
+    "confirm": 401,
+    "discard": 401
+  },
+  "mcpServiceCredentialWithoutSignedUserContext": 401
+}

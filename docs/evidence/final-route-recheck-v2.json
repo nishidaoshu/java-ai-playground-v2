@@ -1,0 +1,73 @@
+{
+  "runId": "cc9d66cf-cc2e-4505-8103-8aac46b19c6b",
+  "buildSha256": "b7d10f5c873c2e1380fca4df720756591c66dadcb83453bce53f797df1eafa20",
+  "sdk": "0.14.1",
+  "mcpProtocol": "2025-06-18",
+  "limits": {
+    "delegations": 2,
+    "tools": 8,
+    "retrievals": 2,
+    "models": 12,
+    "seconds": 240
+  },
+  "mode": "sample",
+  "model": "deepseek-flash",
+  "rerank": "DeepSeek LLM",
+  "embedding": "bge-small-zh-v1.5 int8 CPU",
+  "config": {
+    "chunkSize": 420,
+    "overlap": 80,
+    "candidates": 8,
+    "topK": 4,
+    "minSimilarity": 0.5,
+    "retryMinSimilarity": 0.4,
+    "rerankThreshold": 0.6,
+    "maxRetrievals": 2
+  },
+  "executed": 2,
+  "totalSelected": 2,
+  "passed": 2,
+  "failed": 0,
+  "fixtureOrderIds": [],
+  "results": [
+    {
+      "id": "K05",
+      "category": "knowledge",
+      "question": "起飞前多久可以取消订单？",
+      "status": "PASS",
+      "requestIds": [
+        "19cbe60b-74b9-4da6-a21d-3bbd1056f658",
+        "ca06be3c-2f80-47c5-bd89-a6c85213d517"
+      ],
+      "answer": "根据演示退票服务条款[1]：\n\n- **时间要求**：距离起飞**至少48小时**才允许退票；**少于48小时会被拒绝**。\n- **起飞时间口径**：以北京时间（Asia/Shanghai）航班日期当天 **12:00** 作为演示起飞时间。\n- **订单状态**：只有状态为 **CONFIRMED** 的订单可以申请取消；已取消订单不能再次退票。\n\n以上为演示规则，不适用于真实航空公司，也不产生真实收费。\n\n本次仅查询了条款，**未生成取消方案，也未修改任何订单**。如需实际取消，请提供订单信息，我可以帮你准备待确认方案；方案需由订单所属登录用户在前端确认卡片上点击确认后才执行，聊天中的文字确认无效。",
+      "sourceTitles": [
+        "演示退票服务条款"
+      ],
+      "fixtureOrderIds": [],
+      "verifiedDatabase": [],
+      "providerInputTokens": 2631,
+      "providerOutputTokens": 313,
+      "elapsedMs": 5094
+    },
+    {
+      "id": "M08",
+      "category": "multiturn",
+      "question": "取消订单要提前多少小时？",
+      "status": "PASS",
+      "requestIds": [
+        "bc7fa333-b30a-415a-96d5-cc71f4366087",
+        "8d45a325-8c60-4007-bf11-0134aae3a86f",
+        "cc2f222c-febf-4172-9e5c-30bc4feb36f0"
+      ],
+      "answer": "根据演示改签条款，改签需**至少提前24小时**，即距离北京时间航班日期当天12:00的演示起飞时间不少于24小时[1]。\n\n补充条件：\n- 订单状态须为 CONFIRMED[1]。\n- 新航班日期须在北京时间的明天至未来365天内[1]。\n- 日期和舱位至少改变一项，不能修改出发地和目的地[1]。\n\n以上为演示规则，不代表真实航空公司政策。本次仅查询了条款，未生成改签方案，也未修改任何订单。",
+      "sourceTitles": [
+        "演示改签与舱位条款"
+      ],
+      "fixtureOrderIds": [],
+      "verifiedDatabase": [],
+      "providerInputTokens": 5424,
+      "providerOutputTokens": 521,
+      "elapsedMs": 9000
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "equal": true,
+  "tables": {
+    "flight_orders": {
+      "countBefore": 8,
+      "countAfter": 8,
+      "sha256Before": "a7c38237a4e4a4dd496d2df2bbdcfb43b3816ace428097f8adad59a67fd4f86d",
+      "sha256After": "a7c38237a4e4a4dd496d2df2bbdcfb43b3816ace428097f8adad59a67fd4f86d",
+      "equal": true
+    },
+    "operation_plans": {
+      "countBefore": 7,
+      "countAfter": 7,
+      "sha256Before": "987a11b516230b8100082ccfc0d5130bffb2866d371b39b265590cf0a99f6514",
+      "sha256After": "987a11b516230b8100082ccfc0d5130bffb2866d371b39b265590cf0a99f6514",
+      "equal": true
+    },
+    "knowledge_documents": {
+      "countBefore": 5,
+      "countAfter": 5,
+      "sha256Before": "182e42d88f4549fe9e2470b4c1523c49937e9942a58859220988a2df84ca89e4",
+      "sha256After": "182e42d88f4549fe9e2470b4c1523c49937e9942a58859220988a2df84ca89e4",
+      "equal": true
+    },
+    "operation_records": {
+      "countBefore": 13,
+      "countAfter": 13,
+      "sha256Before": "757e613f774ab20d5da364ffce9239972649b41b3326e5e56e64df89ea487b55",
+      "sha256After": "757e613f774ab20d5da364ffce9239972649b41b3326e5e56e64df89ea487b55",
+      "equal": true
+    },
+    "conversations": {
+      "countBefore": 285,
+      "countAfter": 285,
+      "sha256Before": "2adedaac85aea3ac5994b48dd56dd4f0a7b345645353288189a7fed3824c3cb3",
+      "sha256After": "2adedaac85aea3ac5994b48dd56dd4f0a7b345645353288189a7fed3824c3cb3",
+      "equal": true
+    },
+    "chat_messages": {
+      "countBefore": 664,
+      "countAfter": 664,
+      "sha256Before": "da24effbb58d044299021b68119809256c0a40c4de3c638e75d2bcc11ab2ed9b",
+      "sha256After": "da24effbb58d044299021b68119809256c0a40c4de3c638e75d2bcc11ab2ed9b",
+      "equal": true
+    }
+  }
+}
